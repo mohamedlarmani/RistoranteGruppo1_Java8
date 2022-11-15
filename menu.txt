@@ -124,3 +124,4 @@ Modifica gitflow piatto maccaroni
 - applichiamo la modifica
 - mergiamo il contenuto dento develop locale
 - pushiamo la modifica da develop locale a develop remoto
+
