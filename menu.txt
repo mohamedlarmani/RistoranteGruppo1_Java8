@@ -119,3 +119,8 @@ coppa cioccolato delicato gelato alla crema variegato al cacao e decorato con sc
 coppa amarena delicato gelato alla panna variegato all’amarena con decoro di amarene -5,00
 
 
+Modifica gitflow piatto maccaroni
+-ci stacchiamo il branch localmente
+- applichiamo la modifica
+- mergiamo il contenuto dento develop locale
+- pushiamo la modifica da develop locale a develop remoto
