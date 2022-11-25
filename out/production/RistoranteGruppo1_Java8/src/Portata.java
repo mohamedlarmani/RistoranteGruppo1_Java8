@@ -3,15 +3,14 @@ public class Portata{
 
     private String name;
     private double price;
-    private String ingredients;
 
 
 
-    public Portata(String name, double price, String ingredients){
+    public Portata(String name, double price){
 
         this.name = name;
         this.price = price;
-        this.ingredients = ingredients;
+
 
     }
 
@@ -31,17 +30,11 @@ public class Portata{
         this.price = price;
     }
 
-    public String getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(String ingredients) {
-        this.ingredients = ingredients;
-    }
 
     public void printPortataDetail(){
         System.out.println(name + " " + price);
-        System.out.println(ingredients);
+
+
     }
 
 }

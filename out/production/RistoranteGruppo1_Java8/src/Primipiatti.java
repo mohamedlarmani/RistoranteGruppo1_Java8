@@ -10,6 +10,6 @@ public class Primipiatti extends Portata{
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println("Ingredienti "+ingredients);
+        System.out.println(ingredients);
     }
 }
