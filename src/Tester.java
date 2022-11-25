@@ -14,6 +14,16 @@ public class Tester {
         risoPollo.printPortataDetail();
         spaghettiUdon.printPortataDetail();
 
+        System.out.println("----------------------");
+        Secondipiatti gamberiFritti = new Secondipiatti("Gamberi Fritti",6.00,"con mandorle");
+        Secondipiatti gamberiThai = new Secondipiatti("Gamberi Thai",6.00,"Gamberi");
+        Secondipiatti polloFritto = new Secondipiatti("Pollo Fritto",5.00,"Pollo");
+        Secondipiatti filettoDiSalmone = new Secondipiatti("Filetto di Salmone",8.00,"Salmone e salsa Yakitori");
+
+        gamberiFritti.printPortataDetail();
+        gamberiThai.printPortataDetail();
+        polloFritto.printPortataDetail();
+        filettoDiSalmone.printPortataDetail();
 
 
     }
