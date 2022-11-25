@@ -2,6 +2,8 @@
 
 public class Tester {
     public static void main(String[] args) {
+
+
         Primipiatti risoBianco = new Primipiatti("Riso Bianco",  2.50, "Ciotola di riso bianco e sesamo");
         Primipiatti risoFrutti = new Primipiatti("Riso Frutti", 10.00, "Riso alla piastra con frutti di mare");
         Primipiatti risoSalmone = new Primipiatti("Riso Salmone", 12.00, "Riso alla piastra con salmone");

@@ -32,7 +32,7 @@ public class Portata{
 
 
     public void printPortataDetail(){
-        System.out.println(name + " " + price);
+        System.out.println(name + "  €" + price);
 
 
     }

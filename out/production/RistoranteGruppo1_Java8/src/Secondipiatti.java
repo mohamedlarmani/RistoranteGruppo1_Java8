@@ -1,8 +1,8 @@
-public class Primipiatti extends Portata{
+public class Secondipiatti extends Portata{
 
     String ingredients;
 
-    public Primipiatti(String name, double price, String ingredients) {
+    public Secondipiatti(String name, double price, String ingredients) {
         super(name, price);
         this.ingredients = ingredients;
     }
@@ -10,6 +10,6 @@ public class Primipiatti extends Portata{
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println("Ingredienti "+ingredients);
+        System.out.println("Ingredienti "+ ingredients);
     }
 }
