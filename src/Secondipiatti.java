@@ -12,4 +12,5 @@ public class Secondipiatti extends Portata{
         super.printPortataDetail();
         System.out.println("Ingredienti "+ ingredients);
     }
+
 }

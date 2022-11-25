@@ -1,9 +1,24 @@
 
-
 public class Tester {
     public static void main(String[] args) {
 
 
+
+        System.out.println("----------BEVANDE-----------");
+        Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
+        Bevande acqua75cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 75cl", 3.50, "Frizzante, Naturale");
+        Bevande te = new Bevande("TÈ FREDDO", 3.50, "Limone, Pesca");
+        Bevande succhi = new Bevande("SUCCHI DI FRUTTA PLOSE BIO 20cl", 4.50, "Limone, Pesca, Pera, Pesca, Albicocca, Ace, Mela, Ananas, Arancia e Pompelmo");
+        Bevande bibiteLattina = new Bevande("BIBITE IN LATTINA", 4.00, "Coca-Cola, Coca-Cola Zero, Sprite, Estate', Fanta, Lemonsoda");
+
+        acqua25cl.printPortataDetail();
+        acqua75cl.printPortataDetail();
+        te.printPortataDetail();
+        succhi.printPortataDetail();
+        bibiteLattina.printPortataDetail();
+
+
+        System.out.println("----------PRIMI PIATTI-----------");
         Primipiatti risoBianco = new Primipiatti("Riso Bianco",  2.50, "Ciotola di riso bianco e sesamo");
         Primipiatti risoFrutti = new Primipiatti("Riso Frutti", 10.00, "Riso alla piastra con frutti di mare");
         Primipiatti risoSalmone = new Primipiatti("Riso Salmone", 12.00, "Riso alla piastra con salmone");
@@ -16,7 +31,7 @@ public class Tester {
         risoPollo.printPortataDetail();
         spaghettiUdon.printPortataDetail();
 
-        System.out.println("----------------------");
+        System.out.println("----------SECONDI PIATTI------------");
         Secondipiatti gamberiFritti = new Secondipiatti("Gamberi Fritti",6.00,"con mandorle");
         Secondipiatti gamberiThai = new Secondipiatti("Gamberi Thai",6.00,"Gamberi");
         Secondipiatti polloFritto = new Secondipiatti("Pollo Fritto",5.00,"Pollo");
@@ -26,6 +41,12 @@ public class Tester {
         gamberiThai.printPortataDetail();
         polloFritto.printPortataDetail();
         filettoDiSalmone.printPortataDetail();
+
+
+
+
+
+
 
 
     }
