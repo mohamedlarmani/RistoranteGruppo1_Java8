@@ -43,6 +43,18 @@ public class Tester {
         filettoDiSalmone.printPortataDetail();
 
 
+        System.out.println("----------DESSERT------------");
+        Dessert friedNutella = new Dessert("fried nutella",3.50,"con nutella fritta");
+        Dessert friedChocolateIceCream = new Dessert("fried chocolate ice cream",6.00,"con cioccolata fritta");
+        Dessert sushiDessert = new Dessert("sushi dessert",6.00,"bocconcini di gelato e meringa alla frutta");
+        Dessert sorbettoAlLimone = new Dessert("sorbetto al limone",3.50,"lemon sorbet");
+
+        friedNutella.printPortataDetail();
+        friedChocolateIceCream.printPortataDetail();
+        sushiDessert.printPortataDetail();
+        sorbettoAlLimone.printPortataDetail();
+
+
 
 
 
