@@ -2,6 +2,7 @@ public class Bevande extends Portata {
 
     private String type;
 
+    //TODO SERVE?
     public Bevande(String name, double price) {
         super(name, price);
     }

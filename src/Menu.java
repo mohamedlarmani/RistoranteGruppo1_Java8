@@ -2,6 +2,7 @@
 public class Menu{
 
     private String restaurantName;
+    //TODO possiamo fare un enumerato? ci semplifica la vita?
     private String type;
 
 
@@ -21,6 +22,7 @@ public class Menu{
         return type;
     }
 
+    //TODO il costruttore va qui? a fine della classe?
     public Menu(String restaurantName, String type){
         this.restaurantName = restaurantName;
         this.type = type;

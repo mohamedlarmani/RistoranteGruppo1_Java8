@@ -54,12 +54,5 @@ public class Tester {
         sushiDessert.printPortataDetail();
         sorbettoAlLimone.printPortataDetail();
 
-
-
-
-
-
-
-
     }
 }
