@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tester {
     public static void main(String[] args) {
 
 
+        List<? super Portata> Menu = new ArrayList<>();
 
-        System.out.println("----------BEVANDE-----------");
+
+//        System.out.println("----------BEVANDE-----------");
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
         Bevande acqua75cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 75cl", 3.50, "Frizzante, Naturale");
         Bevande te = new Bevande("TÈ FREDDO", 3.50, "Limone, Pesca");
@@ -18,7 +22,7 @@ public class Tester {
         bibiteLattina.printPortataDetail();
 
 
-        System.out.println("----------PRIMI PIATTI-----------");
+//        System.out.println("----------PRIMI PIATTI-----------");
         Primipiatti risoBianco = new Primipiatti("Riso Bianco",  2.50, "Ciotola di riso bianco e sesamo");
         Primipiatti risoFrutti = new Primipiatti("Riso Frutti", 10.00, "Riso alla piastra con frutti di mare");
         Primipiatti risoSalmone = new Primipiatti("Riso Salmone", 12.00, "Riso alla piastra con salmone");
@@ -31,7 +35,7 @@ public class Tester {
         risoPollo.printPortataDetail();
         spaghettiUdon.printPortataDetail();
 
-        System.out.println("----------SECONDI PIATTI------------");
+//        System.out.println("----------SECONDI PIATTI------------");
         Secondipiatti gamberiFritti = new Secondipiatti("Gamberi Fritti",6.00,"con mandorle");
         Secondipiatti gamberiThai = new Secondipiatti("Gamberi Thai",6.00,"Gamberi");
         Secondipiatti polloFritto = new Secondipiatti("Pollo Fritto",5.00,"Pollo");
@@ -43,7 +47,7 @@ public class Tester {
         filettoDiSalmone.printPortataDetail();
 
 
-        System.out.println("----------DESSERT------------");
+//        System.out.println("----------DESSERT------------");
         Dessert friedNutella = new Dessert("fried nutella",3.50,"con nutella fritta");
         Dessert friedChocolateIceCream = new Dessert("fried chocolate ice cream",6.00,"con cioccolata fritta");
         Dessert sushiDessert = new Dessert("sushi dessert",6.00,"bocconcini di gelato e meringa alla frutta");
@@ -53,6 +57,29 @@ public class Tester {
         friedChocolateIceCream.printPortataDetail();
         sushiDessert.printPortataDetail();
         sorbettoAlLimone.printPortataDetail();
+
+        Menu.add(acqua25cl);
+        Menu.add(acqua75cl);
+        Menu.add(te);
+        Menu.add(succhi);
+
+        Menu.add(risoBianco);
+        Menu.add(risoFrutti);
+        Menu.add(risoSalmone);
+        Menu.add(risoPollo);
+        Menu.add(spaghettiUdon);
+
+        Menu.add(gamberiFritti);
+        Menu.add(gamberiThai);
+        Menu.add(polloFritto);
+        Menu.add(filettoDiSalmone);
+
+        Menu.add(friedNutella);
+        Menu.add(friedChocolateIceCream);
+        Menu.add(sushiDessert);
+        Menu.add(sorbettoAlLimone);
+
+
 
     }
 }
