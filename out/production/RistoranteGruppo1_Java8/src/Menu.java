@@ -1,9 +1,21 @@
+import java.util.List;
 
 public class Menu{
 
     private String restaurantName;
-    private String type;
 
+    private enum Type{
+        Carne,
+        Pesce,
+        Vegano;
+    }
+
+    private Type type;
+
+    public Menu(String restaurantName, Type type){
+        this.restaurantName = restaurantName;
+        this.type = type;
+    }
 
     public void setRestaurantName(String restaurantName) {
         this.restaurantName = restaurantName;
@@ -13,20 +25,19 @@ public class Menu{
         return restaurantName;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public Menu(String restaurantName, String type){
-        this.restaurantName = restaurantName;
-        this.type = type;
+    public static void printMenu(List<? super Portata> Menu){
+        Menu.stream().forEach(singleElement->{
+            System.out.println(singleElement);
+        });
     }
-
-
 
 
 }

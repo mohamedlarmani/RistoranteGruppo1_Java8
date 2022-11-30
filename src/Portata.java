@@ -30,4 +30,11 @@ public class Portata{
         System.out.println(name + "  €" + price);
     }
 
+    @Override
+    public String toString() {
+        return "Portata{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

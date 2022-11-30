@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Menu{
 
@@ -30,6 +31,13 @@ public class Menu{
 
     public Type getType() {
         return type;
+    }
+
+    public static void printMenu(List<? super Portata> Menu){
+        Menu.stream().forEach(singleElement->{
+            System.out.println(singleElement);
+        });
+
     }
 
 
