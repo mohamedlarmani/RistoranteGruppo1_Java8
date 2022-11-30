@@ -1,10 +1,17 @@
 public class Secondipiatti extends Portata{
 
-    //TODO mettere sempre il modificatore di accesso e getter e setter perchè queste deve essere private
-    String ingredients;
+   private String ingredients;
+
 
     public Secondipiatti(String name, double price, String ingredients) {
         super(name, price);
+        this.ingredients = ingredients;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+    public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
 
