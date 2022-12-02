@@ -15,10 +15,12 @@ public class Secondipiatti extends Portata{
         this.ingredients = ingredients;
     }
 
+
     @Override
-    public void printPortataDetail() {
-        super.printPortataDetail();
-        System.out.println("Ingredienti "+ ingredients);
+    public String toString() {
+        return  "Secondi Piatti: " + getName() + '\'' +
+                " € " + getPrice()
+                ;
     }
 
 }

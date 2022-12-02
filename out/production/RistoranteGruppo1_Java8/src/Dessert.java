@@ -17,8 +17,11 @@ public class Dessert extends Portata {
     }
 
     @Override
-    public void printPortataDetail() {
-        super.printPortataDetail();
-        System.out.println("Ingredienti " + ingredients);
+    public String toString() {
+        return  "Dessert: " + getName() + '\'' +
+                " € " + getPrice()
+                ;
     }
+
+
 }

@@ -2,8 +2,6 @@ import java.util.List;
 
 public class Menu{
 
-    private String restaurantName;
-
     private enum Type{
         Carne,
         Pesce,
@@ -12,18 +10,10 @@ public class Menu{
 
     private Type type;
 
-    public Menu(String restaurantName, Type type){
-        this.restaurantName = restaurantName;
+    public Menu(Type type){
         this.type = type;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
-
-    public String getRestaurantName() {
-        return restaurantName;
-    }
 
     public void setType(Type type) {
         this.type = type;
@@ -33,7 +23,8 @@ public class Menu{
         return type;
     }
 
-    public static void printMenu(List<? super Portata> Menu){
+    public static void printMenu(List<? super Portata > Menu){
+        System.out.println(" === MENU ===");
         Menu.stream().forEach(singleElement->{
             System.out.println(singleElement);
         });

@@ -16,8 +16,9 @@ public class Primipiatti extends Portata{
     }
 
     @Override
-    public void printPortataDetail() {
-        super.printPortataDetail();
-        System.out.println("Ingredienti "+ingredients);
+    public String toString() {
+        return  "Primi Piatti: " + getName() + '\'' +
+                " € " + getPrice()
+                ;
     }
 }

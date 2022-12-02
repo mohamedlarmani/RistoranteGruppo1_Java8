@@ -4,6 +4,9 @@ public class Portata{
     private String name;
     private double price;
 
+    private boolean isVegetarino;
+    private boolean isVegano;
+
     public Portata(String name, double price){
         this.name = name;
         this.price = price;
@@ -32,9 +35,8 @@ public class Portata{
 
     @Override
     public String toString() {
-        return "Portata{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return  "Portata: " + name + '\'' +
+                " € " + price
+                ;
     }
 }
