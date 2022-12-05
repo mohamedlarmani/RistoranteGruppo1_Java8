@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Menu{
 
@@ -31,5 +32,12 @@ public class Menu{
 
     }
 
+    public static void filterVeganMenu(List<Portata> Menu){
+        Menu.stream().filter(singleElement-> singleElement.isVegano() == true).collect(Collectors.toList());
+    }
+
+    public static void filterVegetarianMenu(List<Portata> Menu) {
+        Menu.stream().filter(singleElement -> singleElement.isVegetariano() == true).collect(Collectors.toList());
+    }
 
 }
