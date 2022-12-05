@@ -1,3 +1,5 @@
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Cliente {
 
@@ -16,11 +18,28 @@ public class Cliente {
         this.preferences = preferences;
     }
 
-    public void clienteGetMenu(){
+    public void clienteGetMenu(List<Portata> Menu){
         switch (preferences){
-            case Onnivoro -> System.out.println("Menu Completo");
-            case Vegano -> System.out.println("Menu Vegano");
-            case Vegetariano -> System.out.println("Menu Vegetariano");
+            case Onnivoro:
+                System.out.println("=== MENU ===");
+                Menu.stream().forEach(singleElement->{
+                    System.out.println(singleElement);
+                });
+                break;
+            case Vegano:
+                List<Portata> menuVegano = Menu.stream().filter(singleElement-> singleElement.isVegano() == true).collect(Collectors.toList());
+                System.out.println("=== MENU VEGANO ===");
+                menuVegano.stream().forEach(singleElement->{
+                    System.out.println(singleElement);
+                });
+                break;
+            case Vegetariano:
+                List<Portata> menuVegetariano = Menu.stream().filter(singleElement-> singleElement.isVegetariano() == true).collect(Collectors.toList());
+                System.out.println("=== MENU VEGETARIANO ===");
+                menuVegetariano.stream().forEach(singleElement->{
+                    System.out.println(singleElement);
+                });
+                break;
         }
     }
 

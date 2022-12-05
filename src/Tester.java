@@ -32,6 +32,8 @@ public class Tester {
         Dessert sushiDessert = new Dessert("sushi dessert",6.00,"bocconcini di gelato e meringa alla frutta");
         Dessert sorbettoAlLimone = new Dessert("sorbetto al limone",3.50,"lemon sorbet");
 
+        risoBianco.setVegano(true);
+        risoSalmone.setVegetariano(true);
 
         piattiMenu.add(acqua25cl);
         piattiMenu.add(acqua75cl);
@@ -54,7 +56,7 @@ public class Tester {
         piattiMenu.add(sushiDessert);
         piattiMenu.add(sorbettoAlLimone);
 
-        Menu.printMenu(piattiMenu);
+//        Menu.printMenu(piattiMenu);
 
         Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", Cliente.Preferences.Vegetariano);
         Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", Cliente.Preferences.Vegano);
@@ -63,9 +65,9 @@ public class Tester {
 
 
         System.out.println("=== MENU VARI DISPONIBILI ===");
-        clienteOnnivoro.clienteGetMenu();
-        clienteVegano.clienteGetMenu();
-        clienteVegeteriano.clienteGetMenu();
+        clienteOnnivoro.clienteGetMenu((List<Portata>) piattiMenu);
+        clienteVegano.clienteGetMenu((List<Portata>) piattiMenu);
+        clienteVegeteriano.clienteGetMenu((List<Portata>) piattiMenu);
 
 
 

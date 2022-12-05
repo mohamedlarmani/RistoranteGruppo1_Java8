@@ -4,12 +4,28 @@ public class Portata{
     private String name;
     private double price;
 
-    private boolean isVegetarino;
+    private boolean isVegetariano;
     private boolean isVegano;
 
     public Portata(String name, double price){
         this.name = name;
         this.price = price;
+    }
+
+    public boolean isVegetariano() {
+        return isVegetariano;
+    }
+
+    public void setVegetariano(boolean vegetariano) {
+        isVegetariano = vegetariano;
+    }
+
+    public boolean isVegano() {
+        return isVegano;
+    }
+
+    public void setVegano(boolean vegano) {
+        isVegano = vegano;
     }
 
     public String getName() {
