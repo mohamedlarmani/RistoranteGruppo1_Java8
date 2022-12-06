@@ -1,10 +1,13 @@
+import javax.sound.sampled.Port;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Tester {
     public static void main(String[] args) {
-        List<? super Portata> piattiMenu = new ArrayList<>();
+        List<Portata> piattiMenu = new ArrayList<>();
+
+        Portata portataNuova = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
@@ -65,9 +68,9 @@ public class Tester {
 
 
         System.out.println("=== MENU VARI DISPONIBILI ===");
-        clienteOnnivoro.clienteGetMenu((List<Portata>) piattiMenu);
-        clienteVegano.clienteGetMenu((List<Portata>) piattiMenu);
-        clienteVegeteriano.clienteGetMenu((List<Portata>) piattiMenu);
+        clienteOnnivoro.clienteGetMenu(piattiMenu);
+        clienteVegano.clienteGetMenu(piattiMenu);
+        clienteVegeteriano.clienteGetMenu(piattiMenu);
 
 
 

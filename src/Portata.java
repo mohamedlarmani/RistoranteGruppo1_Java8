@@ -4,8 +4,7 @@ public class Portata{
     private String name;
     private double price;
 
-    private boolean isVegetariano;
-    private boolean isVegano;
+    private PreferencesEnum preferencesEnum;
 
     public Portata(String name, double price){
         this.name = name;
@@ -45,14 +44,25 @@ public class Portata{
     }
 
 
+    public PreferencesEnum getPreferencesEnum() {
+        return preferencesEnum;
+    }
+
+    public void setPreferencesEnum(PreferencesEnum preferencesEnum) {
+        this.preferencesEnum = preferencesEnum;
+    }
+
     public void printPortataDetail(){
         System.out.println(name + "  €" + price);
     }
 
+    //TODO eliminare
     @Override
     public String toString() {
         return  "Portata: " + name + '\'' +
                 " € " + price
                 ;
     }
+
+
 }

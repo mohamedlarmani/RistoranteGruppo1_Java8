@@ -32,6 +32,7 @@ public class Menu{
 
     }
 
+    //TODO Eliminare
     public static List<Portata> filterVeganMenu(List<Portata> Menu){
         List<Portata> menuVegano = Menu.stream().filter(singleElement-> singleElement.isVegano() == true).collect(Collectors.toList());
         return menuVegano;
