@@ -17,12 +17,7 @@ public class Dessert extends Portata {
     }
 
     //TODO bisogna creare un metodo stampa portata
-    @Override
-    public String toString() {
-        return  "Dessert: " + getName() + '\'' +
-                " € " + getPrice()
-                ;
-    }
+
 
 
 }

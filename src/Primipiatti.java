@@ -15,10 +15,5 @@ public class Primipiatti extends Portata{
         this.ingredients = ingredients;
     }
 
-    @Override
-    public String toString() {
-        return  "Primi Piatti: " + getName() + '\'' +
-                " € " + getPrice()
-                ;
-    }
+
 }

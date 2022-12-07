@@ -21,12 +21,7 @@ public class Bevande extends Portata {
         System.out.println(type);
     }
 
-    @Override
-    public String toString() {
-        return  "Bevande: " + getName() + '\'' +
-                " € " + getPrice()
-                ;
-    }
+
 
 
 
