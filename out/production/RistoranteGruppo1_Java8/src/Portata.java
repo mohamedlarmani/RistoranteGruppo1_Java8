@@ -4,28 +4,11 @@ public class Portata{
     private String name;
     private double price;
 
-    private boolean isVegetariano;
-    private boolean isVegano;
+    private PreferencesEnum preferencesEnum;
 
     public Portata(String name, double price){
         this.name = name;
         this.price = price;
-    }
-
-    public boolean isVegetariano() {
-        return isVegetariano;
-    }
-
-    public void setVegetariano(boolean vegetariano) {
-        isVegetariano = vegetariano;
-    }
-
-    public boolean isVegano() {
-        return isVegano;
-    }
-
-    public void setVegano(boolean vegano) {
-        isVegano = vegano;
     }
 
     public String getName() {
@@ -45,14 +28,25 @@ public class Portata{
     }
 
 
+    public PreferencesEnum getPreferencesEnum() {
+        return preferencesEnum;
+    }
+
+    public void setPreferencesEnum(PreferencesEnum preferencesEnum) {
+        this.preferencesEnum = preferencesEnum;
+    }
+
     public void printPortataDetail(){
         System.out.println(name + "  €" + price);
     }
 
+    //TODO eliminare
     @Override
     public String toString() {
         return  "Portata: " + name + '\'' +
                 " € " + price
                 ;
     }
+
+
 }

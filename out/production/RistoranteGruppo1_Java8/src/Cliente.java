@@ -5,42 +5,50 @@ public class Cliente {
 
     private String nome;
     private String cognome;
-    private Preferences preferences;
-    public enum Preferences{
-        Onnivoro,
-        Vegetariano,
-        Vegano;
-    }
+    private PreferencesEnum preference;
 
-    public Cliente(String nome,String cognome, Preferences preferences) {
+    public Cliente(String nome,String cognome, PreferencesEnum preference) {
         this.nome = nome;
         this.cognome = cognome;
-        this.preferences = preferences;
+        this.preference = preference;
     }
 
-    public void clienteGetMenu(List<Portata> MenuList){
-        switch (preferences){
-            case Onnivoro:
-                System.out.println("=== MENU ===");
-                MenuList.stream().forEach(singleElement->{
-                    System.out.println(singleElement);
-                });
-                break;
-            case Vegano:
-                Menu.filterVeganMenu(MenuList);
-                System.out.println("=== MENU VEGANO ===");
-                MenuList.stream().forEach(singleElement->{
-                    System.out.println(singleElement);
-                });
-                break;
-            case Vegetariano:
-                Menu.filterVegetarianMenu(MenuList);
-                System.out.println("=== MENU VEGETARIANO ===");
-                MenuList.stream().forEach(singleElement->{
-                    System.out.println(singleElement);
-                });
-                break;
+    //
+    public void clienteGetMenu(List<Portata> listPortate){
+
+        for (Portata portata: listPortate) {
+           if (portata.getPreferencesEnum() == this.preference){
+               portata.printPortataDetail();
+           }
         }
+
+
+//        switch (preference){
+//            case Onnivoro:
+//                System.out.println("=== MENU ===");
+//                listPortate.stream().forEach(portata->{
+//                    portata.printPortataDetail();
+//                });
+//                break;
+//            case Vegano:
+//                System.out.println("=== MENU VEGANO ===");
+//                Menu.filterVeganMenu(listPortate).stream().forEach(singleElement->{
+//                    System.out.println(singleElement);
+//                });
+//                break;
+//            case Vegetariano:
+//                System.out.println("=== MENU VEGETARIANO ===");
+//
+//
+//                //TODO esempio stream
+//                listPortate.stream().filter(portata -> portata.isVegetariano()).collect(Collectors.toList());
+//
+//
+//                Menu.filterVegetarianMenu(MenuList).stream().forEach(singleElement->{
+//                    System.out.println(singleElement);
+//                });
+//                break;
+//        }
     }
 
 
@@ -60,11 +68,11 @@ public class Cliente {
         this.cognome = cognome;
     }
 
-    public  Preferences getPreferences() {
-        return preferences;
+    public  PreferencesEnum getPreference() {
+        return preference;
     }
 
-    public void setPreferences(Preferences preferences) {
-        this.preferences = preferences;
+    public void setPreference(PreferencesEnum preference) {
+        this.preference = preference;
     }
 }

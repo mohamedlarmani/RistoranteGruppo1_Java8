@@ -11,22 +11,6 @@ public class Portata{
         this.price = price;
     }
 
-    public boolean isVegetariano() {
-        return isVegetariano;
-    }
-
-    public void setVegetariano(boolean vegetariano) {
-        isVegetariano = vegetariano;
-    }
-
-    public boolean isVegano() {
-        return isVegano;
-    }
-
-    public void setVegano(boolean vegano) {
-        isVegano = vegano;
-    }
-
     public String getName() {
         return name;
     }

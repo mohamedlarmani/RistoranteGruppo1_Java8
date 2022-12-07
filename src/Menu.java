@@ -33,14 +33,14 @@ public class Menu{
     }
 
     //TODO Eliminare
-    public static List<Portata> filterVeganMenu(List<Portata> Menu){
-        List<Portata> menuVegano = Menu.stream().filter(singleElement-> singleElement.isVegano() == true).collect(Collectors.toList());
-        return menuVegano;
-    }
-
-    public static List<Portata> filterVegetarianMenu(List<Portata> Menu) {
-        List<Portata> menuVegetariano = Menu.stream().filter(singleElement -> singleElement.isVegetariano() == true).collect(Collectors.toList());
-        return menuVegetariano;
-    }
+//    public static List<Portata> filterVeganMenu(List<Portata> Menu){
+//        List<Portata> menuVegano = Menu.stream().filter(singleElement-> singleElement.isVegano() == true).collect(Collectors.toList());
+//        return menuVegano;
+//    }
+//
+//    public static List<Portata> filterVegetarianMenu(List<Portata> Menu) {
+//        List<Portata> menuVegetariano = Menu.stream().filter(singleElement -> singleElement.isVegetariano() == true).collect(Collectors.toList());
+//        return menuVegetariano;
+//    }
 
 }

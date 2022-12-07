@@ -1,10 +1,13 @@
+import javax.sound.sampled.Port;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Tester {
     public static void main(String[] args) {
-        List<? super Portata> piattiMenu = new ArrayList<>();
+        List<Portata> piattiMenu = new ArrayList<>();
+
+        Portata portataNuova = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
@@ -32,8 +35,8 @@ public class Tester {
         Dessert sushiDessert = new Dessert("sushi dessert",6.00,"bocconcini di gelato e meringa alla frutta");
         Dessert sorbettoAlLimone = new Dessert("sorbetto al limone",3.50,"lemon sorbet");
 
-        risoBianco.setVegano(true);
-        risoSalmone.setVegetariano(true);
+        risoBianco.setPreferencesEnum(PreferencesEnum.VEGANO);
+        risoFrutti.setPreferencesEnum(PreferencesEnum.VEGETARIANO);
 
         piattiMenu.add(acqua25cl);
         piattiMenu.add(acqua75cl);
@@ -56,18 +59,23 @@ public class Tester {
         piattiMenu.add(sushiDessert);
         piattiMenu.add(sorbettoAlLimone);
 
-//        Menu.printMenu(piattiMenu);
+        Menu.printMenu(piattiMenu);
 
-        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", Cliente.Preferences.Vegetariano);
-        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", Cliente.Preferences.Vegano);
-        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", Cliente.Preferences.Onnivoro);
+        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO);
+        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO);
+        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO);
         System.out.println("-----------------------------");
 
 
         System.out.println("=== MENU VARI DISPONIBILI ===");
-        clienteOnnivoro.clienteGetMenu((List<Portata>) piattiMenu);
-        clienteVegano.clienteGetMenu((List<Portata>) piattiMenu);
-        clienteVegeteriano.clienteGetMenu((List<Portata>) piattiMenu);
+        clienteOnnivoro.clienteGetMenu(piattiMenu);
+        
+        System.out.println("Cliente Vegano");
+        clienteVegano.clienteGetMenu(piattiMenu);
+
+        System.out.println("Cliente Vegetariano");
+        clienteVegeteriano.clienteGetMenu(piattiMenu);
+
 
 
 
