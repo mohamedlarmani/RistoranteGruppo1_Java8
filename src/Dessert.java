@@ -16,8 +16,9 @@ public class Dessert extends Portata {
         this.ingredients = ingredients;
     }
 
-    //TODO bisogna creare un metodo stampa portata
-
-
-
+    @Override
+    public void printPortataDetail() {
+        super.printPortataDetail();
+        System.out.println(ingredients);
+    }
 }
