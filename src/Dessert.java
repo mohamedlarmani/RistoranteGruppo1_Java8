@@ -1,6 +1,5 @@
 public class Dessert extends Portata {
 
-    //TODO il metodo toString non serve a stampare perchè il tostring è :  11232324234234@nomeclasseeccecc
    private  String ingredients;
 
     public Dessert(String name, double price, String ingredients) {
