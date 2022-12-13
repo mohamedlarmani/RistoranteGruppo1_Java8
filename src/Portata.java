@@ -37,6 +37,8 @@ public class Portata{
         this.preferencesEnum = preferencesEnum;
     }
 
+
+    //TODO formattiamo un po meglio questo metodo
     public void printPortataDetail(){
         System.out.println(name + "  €" + price);
     }

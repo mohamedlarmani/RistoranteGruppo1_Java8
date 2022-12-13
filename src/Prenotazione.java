@@ -3,6 +3,7 @@ public class Prenotazione {
     private Tavolo tavolo;
     private Cliente cliente;
 
+    //TODO le date e le ora vanno rappresentate dateAndTime
     private String dataPrenotazione;
     private String oraPrenotazione;
 
