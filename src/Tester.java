@@ -82,7 +82,7 @@ public class Tester {
 //        Tavolo tavolo1 = new Tavolo(1, clienteOnnivoro);
 //        Prenotazione prenotazione = new Prenotazione(tavolo1 ,clienteVegano, 12/11/19 12.00.00);
 
-            menu1.printMenu2();
+            menu1.printMenu();
 
     }
 }

@@ -1,6 +1,5 @@
 public class Dessert extends Portata {
 
-    //TODO il metodo toString non serve a stampare perchè il tostring è :  11232324234234@nomeclasseeccecc
    private  String ingredients;
 
     public Dessert(String name, double price, String ingredients) {
@@ -16,13 +15,9 @@ public class Dessert extends Portata {
         this.ingredients = ingredients;
     }
 
-    //TODO bisogna creare un metodo stampa portata
     @Override
-    public String toString() {
-        return  "Dessert: " + getName() + '\'' +
-                " € " + getPrice()
-                ;
+    public void printPortataDetail() {
+        super.printPortataDetail();
+        System.out.println(ingredients);
     }
-
-
 }

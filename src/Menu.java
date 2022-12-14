@@ -39,29 +39,18 @@ public class Menu{
     }
 
 
-//    public void printMenu2(){
-//        for (Portata portata: listaPortate) {
-//            if(type == PreferencesEnum.ONNIVORO){
-//                portata.printPortataDetail();
-//            }else{
-//                if (portata.getPreferencesEnum() == this.type){
-//                    portata.printPortataDetail();
-//                }
-//            }
-//        }
-//    }
+    public void printMenu(){
+        for (Portata portata: listaPortate) {
+            if(type == PreferencesEnum.ONNIVORO){
+                portata.printPortataDetail();
+            }else{
+                if (portata.getPreferencesEnum() == this.type){
+                    portata.printPortataDetail();
+                }
+            }
+        }
+    }
 
-//    //TODO eliminare lo static
-//    public static void printMenu(){
-//        //TODO non c'è bisogno di passare la lista come parametro ma bisogna inserire una lista come field
-//        //e ciclare su questa lista
-//        System.out.println(" === MENU ===");
-//        //TODO bisogna formattare bene il menù e poi richiamare il metodo di stampa dettagli portata
-//        menu.stream().forEach(singleElement->{
-//            System.out.println(singleElement);
-//        });
-//
-//    }
 
 
 

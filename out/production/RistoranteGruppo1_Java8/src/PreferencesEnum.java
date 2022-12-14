@@ -1,5 +1,14 @@
 public enum PreferencesEnum {
-        ONNIVORO,
-        VEGETARIANO,
-        VEGANO;
+        ONNIVORO ("Menù fisso "),
+        VEGETARIANO ("Menù vegetariano "),
+        VEGANO ("Menù vegano ");
+
+        private String descrizione;
+        PreferencesEnum(String descrizione) {
+                this.descrizione = descrizione;
+        }
+
+        public String getDescrizione() {
+                return descrizione;
+        }
 }
