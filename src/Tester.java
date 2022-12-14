@@ -1,4 +1,4 @@
-import javax.sound.sampled.Port;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,6 +78,9 @@ public class Tester {
 
         System.out.println("Cliente Vegetariano");
         clienteVegeteriano.clienteGetMenu(piattiMenu);
+
+        Tavolo tavolo1 = new Tavolo(1)
+        Prenotazione prenotazione = new Prenotazione(, clienteVegano, "12/11/19 12.00.00");
 
 
 

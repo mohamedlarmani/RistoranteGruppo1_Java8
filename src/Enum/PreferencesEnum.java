@@ -1,7 +1,9 @@
+package Enum;
+
 public enum PreferencesEnum {
-        ONNIVORO ("menù per onnivori"),
-        VEGETARIANO,
-        VEGANO;
+        ONNIVORO ("Menù fisso "),
+        VEGETARIANO ("Menù vegetariano "),
+        VEGANO ("Menù vegano ");
 
         private String descrizione;
         PreferencesEnum(String descrizione) {

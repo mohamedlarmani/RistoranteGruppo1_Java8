@@ -1,18 +1,20 @@
+import java.time.LocalDateTime;
+
 public class Prenotazione {
 
     private Tavolo tavolo;
     private Cliente cliente;
 
     //TODO le date e le ora vanno rappresentate dateAndTime
-    private String dataPrenotazione;
-    private String oraPrenotazione;
+
+    private LocalDateTime dataOraPrenotazione;
 
 
-    public Prenotazione(Tavolo tavolo, Cliente cliente, String dataPrenotazione, String oraPrenotazione){
+    public Prenotazione(Tavolo tavolo, Cliente cliente, LocalDateTime dataOraPrenotazione){
         this.tavolo = tavolo;
         this.cliente = cliente;
-        this.dataPrenotazione = dataPrenotazione;
-        this.oraPrenotazione = oraPrenotazione;
+        this.dataOraPrenotazione = dataOraPrenotazione;
+
     }
 
 
@@ -32,19 +34,12 @@ public class Prenotazione {
         this.cliente = cliente;
     }
 
-    public String getDataPrenotazione() {
-        return dataPrenotazione;
+    public LocalDateTime getDataOraPrenotazione() {
+        return dataOraPrenotazione;
     }
 
-    public void setDataPrenotazione(String dataPrenotazione) {
-        this.dataPrenotazione = dataPrenotazione;
-    }
-
-    public String getOraPrenotazione() {
-        return oraPrenotazione;
-    }
-
-    public void setOraPrenotazione(String oraPrenotazione) {
-        this.oraPrenotazione = oraPrenotazione;
+    public void setDataOraPrenotazione(LocalDateTime dataOraPrenotazione) {
+        this.dataOraPrenotazione = dataOraPrenotazione;
     }
 }
+

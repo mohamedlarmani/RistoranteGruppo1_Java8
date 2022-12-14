@@ -14,6 +14,15 @@ public class Cliente {
     }
 
 
+    public void clienteGetMenu(List<Portata> listPortate){
+
+        for (Portata portata: listPortate) {
+           if (portata.getPreferencesEnum() == this.preference){
+               portata.printPortataDetail();
+           }
+        }
+    }
+
 
     public String getNome() {
         return nome;
@@ -31,7 +40,7 @@ public class Cliente {
         this.cognome = cognome;
     }
 
-    public  PreferencesEnum getPreference() {
+    public PreferencesEnum getPreference() {
         return preference;
     }
 
