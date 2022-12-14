@@ -16,11 +16,6 @@ public class Secondipiatti extends Portata{
     }
 
 
-    @Override
-    public String toString() {
-        return  "Secondi Piatti: " + getName() + '\'' +
-                " € " + getPrice()
-                ;
-    }
+
 
 }

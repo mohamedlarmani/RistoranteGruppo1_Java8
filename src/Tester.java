@@ -1,4 +1,4 @@
-import java.time.LocalDateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +7,7 @@ public class Tester {
     public static void main(String[] args) {
         List<Portata> piattiMenu = new ArrayList<>();
 
-        Portata portataNuova = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
+        Menu menu1 = new Menu("Menu Test", PreferencesEnum.VEGETARIANO, piattiMenu);
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
@@ -61,7 +61,7 @@ public class Tester {
 
 
         //TODO bisogna instanziare un oggetto menù e aggingere una lista di portate al menù
-        Menu.printMenu(piattiMenu);
+//        Menu.printMenu(piattiMenu);
 
         Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO);
         Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO);
@@ -70,19 +70,19 @@ public class Tester {
 
 
         //TODO non è il cliente che ha una lista di portate ma è il menù che avrà la lista di menù
-        System.out.println("=== MENU VARI DISPONIBILI ===");
-        clienteOnnivoro.clienteGetMenu(piattiMenu);
+//        System.out.println("=== MENU VARI DISPONIBILI ===");
+//        clienteOnnivoro.clienteGetMenu(piattiMenu);
+//
+//        System.out.println("Cliente Vegano");
+//        clienteVegano.clienteGetMenu(piattiMenu);
+//
+//        System.out.println("Cliente Vegetariano");
+//        clienteVegeteriano.clienteGetMenu(piattiMenu);
 
-        System.out.println("Cliente Vegano");
-        clienteVegano.clienteGetMenu(piattiMenu);
+//        Tavolo tavolo1 = new Tavolo(1, clienteOnnivoro);
+//        Prenotazione prenotazione = new Prenotazione(tavolo1 ,clienteVegano, 12/11/19 12.00.00);
 
-        System.out.println("Cliente Vegetariano");
-        clienteVegeteriano.clienteGetMenu(piattiMenu);
-
-        Tavolo tavolo1 = new Tavolo(1)
-        Prenotazione prenotazione = new Prenotazione(, clienteVegano, "12/11/19 12.00.00");
-
-
+            menu1.printMenu2();
 
     }
 }

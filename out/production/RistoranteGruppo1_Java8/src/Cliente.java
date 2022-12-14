@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Cliente {
 
@@ -13,7 +12,7 @@ public class Cliente {
         this.preference = preference;
     }
 
-    //
+
     public void clienteGetMenu(List<Portata> listPortate){
 
         for (Portata portata: listPortate) {
@@ -21,34 +20,6 @@ public class Cliente {
                portata.printPortataDetail();
            }
         }
-
-
-//        switch (preference){
-//            case Onnivoro:
-//                System.out.println("=== MENU ===");
-//                listPortate.stream().forEach(portata->{
-//                    portata.printPortataDetail();
-//                });
-//                break;
-//            case Vegano:
-//                System.out.println("=== MENU VEGANO ===");
-//                Menu.filterVeganMenu(listPortate).stream().forEach(singleElement->{
-//                    System.out.println(singleElement);
-//                });
-//                break;
-//            case Vegetariano:
-//                System.out.println("=== MENU VEGETARIANO ===");
-//
-//
-//                //TODO esempio stream
-//                listPortate.stream().filter(portata -> portata.isVegetariano()).collect(Collectors.toList());
-//
-//
-//                Menu.filterVegetarianMenu(MenuList).stream().forEach(singleElement->{
-//                    System.out.println(singleElement);
-//                });
-//                break;
-//        }
     }
 
 
@@ -68,7 +39,7 @@ public class Cliente {
         this.cognome = cognome;
     }
 
-    public  PreferencesEnum getPreference() {
+    public PreferencesEnum getPreference() {
         return preference;
     }
 

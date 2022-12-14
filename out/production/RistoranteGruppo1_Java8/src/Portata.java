@@ -1,4 +1,3 @@
-
 public class Portata{
 
     private String name;
@@ -10,6 +9,7 @@ public class Portata{
         this.name = name;
         this.price = price;
     }
+
 
     public String getName() {
         return name;
@@ -36,17 +36,12 @@ public class Portata{
         this.preferencesEnum = preferencesEnum;
     }
 
+
+    //TODO formattiamo un po meglio questo metodo
     public void printPortataDetail(){
         System.out.println(name + "  €" + price);
     }
 
-    //TODO eliminare
-    @Override
-    public String toString() {
-        return  "Portata: " + name + '\'' +
-                " € " + price
-                ;
-    }
-
-
 }
+
+
