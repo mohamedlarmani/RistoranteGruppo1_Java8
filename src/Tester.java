@@ -60,29 +60,13 @@ public class Tester {
         piattiMenu.add(sorbettoAlLimone);
 
 
-        //TODO bisogna instanziare un oggetto menù e aggingere una lista di portate al menù
-//        Menu.printMenu(piattiMenu);
-
         Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO);
         Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO);
         Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO);
         System.out.println("-----------------------------");
 
 
-        //TODO non è il cliente che ha una lista di portate ma è il menù che avrà la lista di menù
-//        System.out.println("=== MENU VARI DISPONIBILI ===");
-//        clienteOnnivoro.clienteGetMenu(piattiMenu);
-//
-//        System.out.println("Cliente Vegano");
-//        clienteVegano.clienteGetMenu(piattiMenu);
-//
-//        System.out.println("Cliente Vegetariano");
-//        clienteVegeteriano.clienteGetMenu(piattiMenu);
-
-//        Tavolo tavolo1 = new Tavolo(1, clienteOnnivoro);
-//        Prenotazione prenotazione = new Prenotazione(tavolo1 ,clienteVegano, 12/11/19 12.00.00);
-
-            menu1.printMenu();
+        menu1.printMenu();
 
     }
 }

@@ -1,12 +1,15 @@
+import java.util.List;
+
 public class Ristorante {
 
-
-    //TODO aggiungere il menù o una lista di menù o un singolo oggetto menù
     private String restaurantName;
 
+    private List <Menu> menuList;
 
-    public Ristorante (String restaurantName){
+
+    public Ristorante(String restaurantName, List<Menu> menuList) {
         this.restaurantName = restaurantName;
+        this.menuList = menuList;
     }
 
     public String getRestaurantName() {
@@ -17,5 +20,12 @@ public class Ristorante {
         this.restaurantName = restaurantName;
     }
 
+    public List<Menu> getMenuList() {
+        return menuList;
+    }
 
+    public void setMenuList(List<Menu> menuList) {
+        this.menuList = menuList;
+    }
 }
+
