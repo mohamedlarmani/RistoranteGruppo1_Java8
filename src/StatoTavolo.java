@@ -1,8 +1,8 @@
 public enum StatoTavolo {
 
-    TAVOLOL("Libero"),
-    TAVOLOO("Occupato"),
-    TAVOLOR("Riservato");
+    LIBERO ("Tavolo libero"),
+    OCCUPATO("Tavolo occupato"),
+    RISERVATO ("Tavolo riservato");
 
     private String descrizione;
     StatoTavolo(String descrizione) {
