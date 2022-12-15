@@ -5,7 +5,11 @@ public class Tavolo {
     //TODO il tavolo deve avere un numero di posti? quindi un enumerato? e inoltre avrà uno stato: libero, occupato, riservato
     private Cliente cliente;
 
-    public Tavolo(Integer numeroDiTavolo, Cliente cliente,Integer numeroPosti){
+    private StateEnum stateEnum;
+
+
+
+    public Tavolo(Integer numeroDiTavolo, Cliente cliente){
         this.numeroDiTavolo = numeroDiTavolo;
         this.cliente = cliente;
 
@@ -27,4 +31,11 @@ public class Tavolo {
         this.cliente = cliente;
     }
 
+    public StateEnum getStateEnum() {
+        return stateEnum;
+    }
+
+    public void setStateEnum(StateEnum stateEnum) {
+        this.stateEnum = stateEnum;
+    }
 }
