@@ -65,7 +65,6 @@ public class Tester {
         Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO);
         System.out.println("-----------------------------");
 
-
         menu1.printMenu();
 
     }

@@ -11,4 +11,6 @@ public enum PreferencesEnum {
         public String getDescrizione() {
                 return descrizione;
         }
+
+
 }
