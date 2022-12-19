@@ -7,7 +7,7 @@ public class Tester {
     public static void main(String[] args) {
         List<Portata> piattiMenu = new ArrayList<>();
 
-        Menu menu1 = new Menu("Menu Test", PreferencesEnum.VEGETARIANO, piattiMenu);
+        Menu menu1 = new Menu("Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
@@ -64,12 +64,7 @@ public class Tester {
         Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO);
         Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO);
         System.out.println("-----------------------------");
-        // Prova di un Tavolo
 
-        Tavolo MaryRose = new Tavolo(12,clienteOnnivoro,2);
-        System.out.println(MaryRose.getNumeroDiTavolo());
-        System.out.println(MaryRose.getNumeroPosti());
-        System.out.println(MaryRose.getCliente());
         menu1.printMenu();
 
     }

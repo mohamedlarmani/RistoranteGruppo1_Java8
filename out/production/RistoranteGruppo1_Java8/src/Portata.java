@@ -37,9 +37,8 @@ public class Portata{
     }
 
 
-    //TODO formattiamo un po meglio questo metodo
     public void printPortataDetail(){
-        System.out.println(name + "  €" + price);
+        System.out.println( " ▸  €  "  + price + "        Portata : " + " " + name );
     }
 
 }

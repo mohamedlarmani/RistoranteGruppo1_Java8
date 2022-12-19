@@ -2,7 +2,6 @@ public class Tavolo {
 
     private Integer numeroDiTavolo;
 
-    //TODO il tavolo deve avere un numero di posti? quindi un enumerato? e inoltre avrà uno stato: libero, occupato, riservato
     private Cliente cliente;
 
     private StateEnum stateEnum;

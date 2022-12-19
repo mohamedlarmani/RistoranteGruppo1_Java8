@@ -18,7 +18,7 @@ public class Bevande extends Portata {
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println(type);
+        System.out.println(" \uD83E\uDD64 Bevande : " + " " + type);
     }
 
 

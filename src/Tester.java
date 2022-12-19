@@ -7,7 +7,7 @@ public class Tester {
     public static void main(String[] args) {
         List<Portata> piattiMenu = new ArrayList<>();
 
-        Menu menu1 = new Menu("Menu Test", PreferencesEnum.VEGETARIANO, piattiMenu);
+        Menu menu1 = new Menu("Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, "Frizzante, Naturale");
@@ -66,6 +66,7 @@ public class Tester {
         System.out.println("-----------------------------");
 
         menu1.printMenu();
+
 
     }
 }

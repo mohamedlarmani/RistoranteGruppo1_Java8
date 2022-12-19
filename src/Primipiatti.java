@@ -15,5 +15,9 @@ public class Primipiatti extends Portata{
         this.ingredients = ingredients;
     }
 
-
+    @Override
+    public void printPortataDetail() {
+        super.printPortataDetail();
+        System.out.println( "\uD83C\uDF71 Ingredienti :  " + ingredients);
+    }
 }

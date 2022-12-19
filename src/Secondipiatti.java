@@ -15,6 +15,12 @@ public class Secondipiatti extends Portata{
         this.ingredients = ingredients;
     }
 
+    @Override
+    public void printPortataDetail() {
+        super.printPortataDetail();
+        System.out.println("\uD83C\uDF65 Secondi piatti : " + " " + ingredients);
+    }
+
 
 
 

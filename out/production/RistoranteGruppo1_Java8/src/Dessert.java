@@ -18,6 +18,6 @@ public class Dessert extends Portata {
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println(ingredients);
+        System.out.println(" \uD83C\uDF6C Dolci : " + ingredients);
     }
 }
