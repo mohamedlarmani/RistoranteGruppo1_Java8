@@ -5,6 +5,8 @@ public class Portata{
 
     private PreferencesEnum preferencesEnum;
 
+
+    //TODO dobbiamo passare anche il preference enum
     public Portata(String name, double price){
         this.name = name;
         this.price = price;

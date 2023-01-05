@@ -6,6 +6,7 @@ public class Cliente {
     private String cognome;
     private PreferencesEnum preference;
 
+    //TODO inserire città o età
     public Cliente(String nome,String cognome, PreferencesEnum preference) {
         this.nome = nome;
         this.cognome = cognome;

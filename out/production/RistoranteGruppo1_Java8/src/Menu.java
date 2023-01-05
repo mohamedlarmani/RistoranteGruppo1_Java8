@@ -39,19 +39,19 @@ public class Menu{
     }
 
 
+    //TODO rivalutare e pensare come riscrivere questo metodo
     public void printMenu(){
-        for (Portata portata: listaPortate) {
-            if(type == PreferencesEnum.ONNIVORO){
+        if(this.type == PreferencesEnum.ONNIVORO) {
+            for (Portata portata : listaPortate) {
                 portata.printPortataDetail();
-            }else{
-                if (portata.getPreferencesEnum() == this.type){
+            }
+        }else{
+            for (Portata portata: listaPortate) {
+                if (this.type == portata.getPreferencesEnum()){
                     portata.printPortataDetail();
                 }
             }
         }
     }
-
-
-
 
 }

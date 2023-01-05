@@ -2,6 +2,7 @@ public class Bevande extends Portata {
 
     private String type;
 
+    // TODO
     public Bevande(String name, double price, String type) {
         super(name, price);
         this.type = type;
@@ -20,9 +21,5 @@ public class Bevande extends Portata {
         super.printPortataDetail();
         System.out.println(" \uD83E\uDD64 Bevande : " + " " + type);
     }
-
-
-
-
 
 }
