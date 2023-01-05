@@ -2,49 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e583b82-3702-4a91-919d-1c8b3af55463" name="Changes" comment="updated .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/CampagnaPromozionale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Promozione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/RistoranteGruppo1_Java8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Bevande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Dessert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Portata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/PreferencesEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Prenotazione.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Primipiatti.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Ristorante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Secondipiatti.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/StateEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Tavolo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/Tester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/menu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/new_menu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Bevande.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Dessert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Portata.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/PreferencesEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Prenotazione.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Primipiatti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Ristorante.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Secondipiatti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/StateEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Tavolo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RistoranteGruppo1_Java8/src/Tester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +42,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/chaou/Desktop/ProgiettoDevelhope/RistoranteGruppo1_Java8",
+    "last_opened_file_path": "C:/Users/maria/Desktop/PROGETTO/RistoranteGruppo1_Java8",
     "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files"
   }
 }]]></component>

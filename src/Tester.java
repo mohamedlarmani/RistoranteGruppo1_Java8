@@ -60,9 +60,9 @@ public class Tester {
         piattiMenu.add(sorbettoAlLimone);
 
 
-        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO);
-        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO);
-        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO);
+        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo");
+        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli");
+        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 10, "Venezia");
         System.out.println("-----------------------------");
 
         menu1.printMenu();
