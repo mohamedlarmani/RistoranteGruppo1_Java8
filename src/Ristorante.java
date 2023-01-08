@@ -4,14 +4,15 @@ public class Ristorante {
 
     private String restaurantName;
 
-    private List <Menu> menuList;
     private CampagnaPromozionale p;
 
+    private List <Cliente> clienteList ;
 
-    public Ristorante(String restaurantName, List<Menu> menuList) {
+
+    public Ristorante(String restaurantName) {
         this.restaurantName = restaurantName;
-        this.menuList = menuList;
     }
+
 
     public void addPromo(CampagnaPromozionale p){
         this.p = p;
@@ -25,12 +26,31 @@ public class Ristorante {
         this.restaurantName = restaurantName;
     }
 
-    public List<Menu> getMenuList() {
-        return menuList;
+    public CampagnaPromozionale getP() {
+        return p;
     }
 
-    public void setMenuList(List<Menu> menuList) {
-        this.menuList = menuList;
+    public void setP(CampagnaPromozionale p) {
+        this.p = p;
+    }
+
+    public List<Cliente> getClienteList() {
+        return clienteList;
+    }
+
+    public void setClienteList(List<Cliente> clienteList) {
+        this.clienteList = clienteList;
+    }
+
+    public void stampaListaClienti(List <Cliente> clienteList) {
+        for (Cliente c : clienteList) {
+            System.out.println("Nome: " + c.getNome() + ", Cognome: " + c.getCognome());
+            if (c.haPrenotato()) {
+                System.out.println("✔ Prenotazione effettuata:  " + c.getPrenotazione().getDataOraPrenotazione() + "   per  " +c.getPrenotazione().getNumeroClienti() + " persone");
+            } else {
+                System.out.println("❌ Prenotazione non effettuata");
+            }
+        }
     }
 }
 

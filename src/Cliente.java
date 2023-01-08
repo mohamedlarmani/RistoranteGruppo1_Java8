@@ -6,8 +6,16 @@ public class Cliente {
     private PreferencesEnum preference;
     private Integer eta;
     private String citta;
+    private Prenotazione prenotazione;
 
-    //Inserimento età e città per future promozioni
+
+    /**
+     * @param nome dei clienti
+     * @param cognome dei clienti
+     * @param preference dei clienti sui cibi
+     * @param eta dei clienti per le future promozioni
+     * @param citta dei clienti per le future promozioni
+     */
     public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta) {
         this.nome = nome;
         this.cognome = cognome;
@@ -16,12 +24,11 @@ public class Cliente {
         this.citta = citta;
     }
 
-    public void clienteGetMenu(List<Portata> listPortate){
-        for (Portata portata: listPortate) {
-           if (portata.getPreferencesEnum() == this.preference){
-               portata.printPortataDetail();
-           }
-        }
+    /**
+     * @return per controllare se il cliente ha già la prenotazione, in questo caso ritorna falso
+     */
+    public boolean haPrenotato(){
+        return prenotazione != null;
     }
 
 
@@ -65,4 +72,11 @@ public class Cliente {
         this.citta = citta;
     }
 
+    public Prenotazione getPrenotazione() {
+        return prenotazione;
+    }
+
+    public void setPrenotazione(Prenotazione prenotazione) {
+        this.prenotazione = prenotazione;
+    }
 }

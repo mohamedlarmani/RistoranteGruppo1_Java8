@@ -1,11 +1,8 @@
 public class Tavolo {
 
     private Integer numeroDiTavolo;
-
     private Cliente cliente;
-
     private StateEnum stateEnum;
-
 
 
     public Tavolo(Integer numeroDiTavolo, Cliente cliente){

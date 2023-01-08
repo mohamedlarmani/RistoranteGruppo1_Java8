@@ -7,7 +7,6 @@ public class CampagnaPromozionale{
     private Portata p;
     private Promozione promo;
 
-
     public CampagnaPromozionale(GregorianCalendar dataInizio, GregorianCalendar dataFine) {
         this.dataInizio = dataInizio;
         this.dataFine = dataFine;

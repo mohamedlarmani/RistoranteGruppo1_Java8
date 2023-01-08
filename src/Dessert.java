@@ -2,8 +2,8 @@ public class Dessert extends Portata {
 
    private  String ingredients;
 
-    public Dessert(String name, double price, String ingredients) {
-        super(name, price);
+    public Dessert(String name, double price, PreferencesEnum preferencesEnum, String ingredients) {
+        super(name, price, preferencesEnum);
         this.ingredients = ingredients;
     }
 

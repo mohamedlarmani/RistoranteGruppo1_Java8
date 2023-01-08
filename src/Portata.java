@@ -2,16 +2,13 @@ public class Portata{
 
     private String name;
     private double price;
-
     private PreferencesEnum preferencesEnum;
 
-
-    //TODO dobbiamo passare anche il preference enum
-    public Portata(String name, double price){
+    public Portata(String name, double price, PreferencesEnum preferencesEnum){
         this.name = name;
         this.price = price;
+        this.preferencesEnum = preferencesEnum;
     }
-
 
     public String getName() {
         return name;

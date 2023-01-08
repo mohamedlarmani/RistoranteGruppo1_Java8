@@ -2,9 +2,8 @@ public class Bevande extends Portata {
 
     private String type;
 
-    // TODO
-    public Bevande(String name, double price, String type) {
-        super(name, price);
+    public Bevande(String name, double price, PreferencesEnum preferencesEnum, String type) {
+        super(name, price, preferencesEnum);
         this.type = type;
     }
 

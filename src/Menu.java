@@ -39,7 +39,9 @@ public class Menu{
     }
 
 
-    //TODO rivalutare e pensare come riscrivere questo metodo
+    /**
+     * Metodo che filtra le portate per i vari gusti personali
+     */
     public void printMenu(){
         if(this.type == PreferencesEnum.ONNIVORO) {
             for (Portata portata : listaPortate) {

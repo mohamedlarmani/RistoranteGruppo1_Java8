@@ -2,9 +2,8 @@ public class Secondipiatti extends Portata{
 
    private String ingredients;
 
-
-    public Secondipiatti(String name, double price, String ingredients) {
-        super(name, price);
+    public Secondipiatti(String name, double price, PreferencesEnum preferencesEnum, String ingredients) {
+        super(name, price, preferencesEnum);
         this.ingredients = ingredients;
     }
 

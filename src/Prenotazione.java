@@ -2,43 +2,28 @@ import java.time.LocalDateTime;
 
 public class Prenotazione {
 
-    private Tavolo tavolo;
-    private Cliente cliente;
+    private String dataOraPrenotazione;
+    private Integer numeroClienti;
 
-
-    private LocalDateTime dataOraPrenotazione;
-
-
-    public Prenotazione(Tavolo tavolo, Cliente cliente, LocalDateTime dataOraPrenotazione){
-        this.tavolo = tavolo;
-        this.cliente = cliente;
+    public Prenotazione(String dataOraPrenotazione, Integer numeroClienti) {
         this.dataOraPrenotazione = dataOraPrenotazione;
-
+        this.numeroClienti = numeroClienti;
     }
 
-
-    public Tavolo getTavolo() {
-        return tavolo;
-    }
-
-    public void setTavolo(Tavolo tavolo) {
-        this.tavolo = tavolo;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    public LocalDateTime getDataOraPrenotazione() {
+    public String getDataOraPrenotazione() {
         return dataOraPrenotazione;
     }
 
-    public void setDataOraPrenotazione(LocalDateTime dataOraPrenotazione) {
+    public void setDataOraPrenotazione(String dataOraPrenotazione) {
         this.dataOraPrenotazione = dataOraPrenotazione;
+    }
+
+    public Integer getNumeroClienti() {
+        return numeroClienti;
+    }
+
+    public void setNumeroClienti(Integer numeroClienti) {
+        this.numeroClienti = numeroClienti;
     }
 }
 
