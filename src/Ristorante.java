@@ -1,16 +1,28 @@
+import javax.xml.crypto.Data;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Ristorante {
+
+    private static int numeroTavolo = 0;
 
     private String restaurantName;
 
     private CampagnaPromozionale p;
 
-    private List <Cliente> clienteList ;
 
 
+    private List<Tavolo> tavoloList;
+
+    private Integer totaleTavoli;
+
+
+    //TODO
     public Ristorante(String restaurantName) {
         this.restaurantName = restaurantName;
+        clienteList = new ArrayList<>();
+        tavoloList = new ArrayList<>();
     }
 
 
@@ -34,13 +46,6 @@ public class Ristorante {
         this.p = p;
     }
 
-    public List<Cliente> getClienteList() {
-        return clienteList;
-    }
-
-    public void setClienteList(List<Cliente> clienteList) {
-        this.clienteList = clienteList;
-    }
 
     public void stampaListaClienti(List <Cliente> clienteList) {
         for (Cliente c : clienteList) {
@@ -51,6 +56,25 @@ public class Ristorante {
                 System.out.println("❌ Prenotazione non effettuata");
             }
         }
+    }
+
+    //TODO ci dovrebbe essere un metodo che mi prenota un tavolo nel ristorante
+
+    private Prenotazione prenotazioneRistorante(Cliente cliente){
+        //TODO costruttore di defaoult
+        Prenotazione nuovaPrenotazione= new Prenotazione();
+        //ogni volta che non abbiamo raggiunto il limite di tavoli
+        if (tavoloList.size() <= totaleTavoli){
+            //creiamo la prenotazione e aggiongiamo il tavolo prenotato alla lista
+            //TODO
+            nuovaPrenotazione = new Prenotazione(new Date(),2);
+
+            Tavolo nuovoTavolo = new Tavolo(numeroTavolo,cliente);
+            numeroTavolo++;
+            tavoloList.add(nuovoTavolo);
+
+        }
+        return nuovaPrenotazione;
     }
 }
 

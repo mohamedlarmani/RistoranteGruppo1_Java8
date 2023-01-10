@@ -6,7 +6,10 @@ public class Cliente {
     private PreferencesEnum preference;
     private Integer eta;
     private String citta;
-    private Prenotazione prenotazione;
+
+    //TODO
+    private Integer numeroClienti
+
 
 
     /**
@@ -16,7 +19,9 @@ public class Cliente {
      * @param eta dei clienti per le future promozioni
      * @param citta dei clienti per le future promozioni
      */
-    public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta) {
+
+    //TODO rifattorizzare
+    public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta, TipoPromozione tipoPromozione) {
         this.nome = nome;
         this.cognome = cognome;
         this.preference = preference;
@@ -27,6 +32,7 @@ public class Cliente {
     /**
      * @return per controllare se il cliente ha già la prenotazione, in questo caso ritorna falso
      */
+    //
     public boolean haPrenotato(){
         return prenotazione != null;
     }

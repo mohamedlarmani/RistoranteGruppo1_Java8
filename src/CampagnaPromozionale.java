@@ -1,9 +1,18 @@
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class CampagnaPromozionale{
 
-    private GregorianCalendar dataInizio;
-    private GregorianCalendar dataFine;
+    //TODO
+
+    private TipoPromozione tipoPromozione;
+
+    //TODO rifattorizzare
+    private LocalDateTime dataInizio;
+    private LocalDateTime dataFine;
+
+    //TODO clening code chiamare p -> portata
     private Portata p;
     private Promozione promo;
 
