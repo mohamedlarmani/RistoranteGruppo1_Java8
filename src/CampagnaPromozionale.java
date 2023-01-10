@@ -4,45 +4,50 @@ import java.util.GregorianCalendar;
 
 public class CampagnaPromozionale{
 
-    //TODO
 
     private TipoPromozione tipoPromozione;
 
-    //TODO rifattorizzare
     private LocalDateTime dataInizio;
     private LocalDateTime dataFine;
 
-    //TODO clening code chiamare p -> portata
-    private Portata p;
-    private Promozione promo;
+    private Portata portata;
+    private Promozione promo; //TODO IN QUESTO CASO HA SENSO LASCIARE PROMOZIONE? -MARI
 
-    public CampagnaPromozionale(GregorianCalendar dataInizio, GregorianCalendar dataFine) {
+    public CampagnaPromozionale(LocalDateTime dataInizio, LocalDateTime dataFine) {
         this.dataInizio = dataInizio;
         this.dataFine = dataFine;
     }
 
-    public GregorianCalendar getDataInizio() {
+    public TipoPromozione getTipoPromozione() {
+        return tipoPromozione;
+    }
+
+    public void setTipoPromozione(TipoPromozione tipoPromozione) {
+        this.tipoPromozione = tipoPromozione;
+    }
+
+    public LocalDateTime getDataInizio() {
         return dataInizio;
     }
 
-    public void setDataInizio(GregorianCalendar dataInizio) {
+    public void setDataInizio(LocalDateTime dataInizio) {
         this.dataInizio = dataInizio;
     }
 
-    public GregorianCalendar getDataFine() {
+    public LocalDateTime getDataFine() {
         return dataFine;
     }
 
-    public void setDataFine(GregorianCalendar dataFine) {
+    public void setDataFine(LocalDateTime dataFine) {
         this.dataFine = dataFine;
     }
 
-    public Portata getP() {
-        return p;
+    public Portata getPortata() {
+        return portata;
     }
 
-    public void setP(Portata p) {
-        this.p = p;
+    public void setPortata(Portata portata) {
+        this.portata = portata;
     }
 
     public Promozione getPromo() {
@@ -53,8 +58,8 @@ public class CampagnaPromozionale{
         this.promo = promo;
     }
 
-    public void addPromo(Portata p, Promozione promo){
-        this.p = p;
+    public void addPromo(Portata portata, Promozione promo){
+        this.portata = portata;
         this.promo = promo;
     }
 
