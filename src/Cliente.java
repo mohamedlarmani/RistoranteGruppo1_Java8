@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Cliente {
     private String nome;
     private String cognome;
@@ -25,9 +23,6 @@ public class Cliente {
         this.preference = preference;
         this.eta = eta;
         this.citta = citta;
-        if (eta < 10){
-            this.promozione = TipoPromozione.PROMOETA;
-        }
     }
 
 

@@ -2,23 +2,27 @@ import java.time.LocalDateTime;
 
 public class Prenotazione {
 
-    private String dataOraPrenotazione;
+    private LocalDateTime dataOraPrenotazione;
     private Integer numeroClienti;
+    private boolean esitoPrenotazione;
+    private Cliente cliente;
 
-    //TODO inserire un booleano che ci dice se la prenotazione è andata a buon fine
+
+    public Prenotazione(){}
 
 
-
-    public Prenotazione(String dataOraPrenotazione, Integer numeroClienti) {
+    public Prenotazione(LocalDateTime dataOraPrenotazione, Integer numeroClienti, boolean esitoPrenotazione, Cliente cliente) {
         this.dataOraPrenotazione = dataOraPrenotazione;
         this.numeroClienti = numeroClienti;
+        this.esitoPrenotazione = esitoPrenotazione;
+        this.cliente = cliente;
     }
 
-    public String getDataOraPrenotazione() {
+    public LocalDateTime getDataOraPrenotazione() {
         return dataOraPrenotazione;
     }
 
-    public void setDataOraPrenotazione(String dataOraPrenotazione) {
+    public void setDataOraPrenotazione(LocalDateTime dataOraPrenotazione) {
         this.dataOraPrenotazione = dataOraPrenotazione;
     }
 
@@ -28,6 +32,22 @@ public class Prenotazione {
 
     public void setNumeroClienti(Integer numeroClienti) {
         this.numeroClienti = numeroClienti;
+    }
+
+    public boolean isEsitoPrenotazione() {
+        return esitoPrenotazione;
+    }
+
+    public void setEsitoPrenotazione(boolean esitoPrenotazione) {
+        this.esitoPrenotazione = esitoPrenotazione;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
 

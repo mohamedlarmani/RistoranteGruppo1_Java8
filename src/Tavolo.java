@@ -8,7 +8,6 @@ public class Tavolo {
     public Tavolo(Integer numeroDiTavolo, Cliente cliente){
         this.numeroDiTavolo = numeroDiTavolo;
         this.cliente = cliente;
-
     }
 
     public Integer getNumeroDiTavolo() {

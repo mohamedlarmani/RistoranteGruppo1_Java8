@@ -12,9 +12,11 @@ public class CampagnaPromozionale{
 
     private Portata portata;
 
-    public CampagnaPromozionale(LocalDateTime dataInizio, LocalDateTime dataFine) {
+
+    public CampagnaPromozionale(LocalDateTime dataInizio, LocalDateTime dataFine, TipoPromozione tipoPromozione) {
         this.dataInizio = dataInizio;
         this.dataFine = dataFine;
+        this.tipoPromozione = tipoPromozione;
     }
 
     public TipoPromozione getTipoPromozione() {
@@ -50,6 +52,5 @@ public class CampagnaPromozionale{
     }
 
 
-    }
 
-
+}

@@ -1,6 +1,7 @@
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,17 +70,20 @@ public class Tester {
         menu1.printMenu();
 
         System.out.println("======== PRENOTAZIONI ========");
-        Prenotazione prova1 = new Prenotazione("2023-01-10 12:00:00", 6);
-        clienteVegano.setPrenotazione(prova1);
         List<Cliente> clienteList = new ArrayList<>();
         clienteList.add(clienteVegano);
         clienteList.add(clienteOnnivoro);
         clienteList.add(clienteVegeteriano);
 
-        Ristorante ristorante = new Ristorante("PROVA1");
-        ristorante.stampaListaClienti(clienteList);
+        Ristorante ristorante = new Ristorante("PROVA1", 50);
+        ristorante.stampaListaClienti();
+        LocalDateTime data;
+        ristorante.prenotazioneRistorante(clienteOnnivoro, data = LocalDateTime.of(2023,1,15,12,00), 5);
+        System.out.println(ristorante.getPrenotazioniList());
 
-
+        ristorante.prenotazioneRistorante(clienteVegano, data = LocalDateTime.of(2023,1,15,12,00), 5);
+        ristorante.stampaListaPrenotazioni();
+        ristorante.stampaListaTavoli();
 
 
 
