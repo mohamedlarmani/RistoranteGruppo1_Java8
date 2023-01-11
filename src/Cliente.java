@@ -25,7 +25,6 @@ public class Cliente {
         this.citta = citta;
     }
 
-
     public String getNome() {
         return nome;
     }
