@@ -18,7 +18,6 @@ public class Ristorante {
 
     private Integer totaleTavoli;
 
-
     //TODO
     public Ristorante(String restaurantName, Integer totaleTavoli) {
         this.restaurantName = restaurantName;

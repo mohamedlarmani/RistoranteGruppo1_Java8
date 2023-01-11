@@ -60,8 +60,7 @@ public class Tester {
         piattiMenu.add(friedChocolateIceCream);
         piattiMenu.add(sushiDessert);
         piattiMenu.add(sorbettoAlLimone);
-
-
+        
         Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo",2);
         Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli",3);
         Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 9, "Venezia",4);
