@@ -10,7 +10,7 @@ public enum TipoPromozione {
     private String scontoEffettuato;
 
 
-    TipoPromozione(String descrizione,String scontoEffettuato){
+    TipoPromozione(String descrizione,String scontoEffettuato ){
         this.descrizione = descrizione;
         this.scontoEffettuato= scontoEffettuato;
     }
