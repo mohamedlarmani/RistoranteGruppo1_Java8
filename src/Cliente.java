@@ -6,9 +6,10 @@ public class Cliente {
     private PreferencesEnum preference;
     private Integer eta;
     private String citta;
+    private TipoPromozione promozione;
 
     //TODO
-    private Integer numeroClienti
+    private Integer numeroClienti;
 
 
 
@@ -21,12 +22,15 @@ public class Cliente {
      */
 
     //TODO rifattorizzare
-    public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta, TipoPromozione tipoPromozione) {
+    public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta) {
         this.nome = nome;
         this.cognome = cognome;
         this.preference = preference;
         this.eta = eta;
         this.citta = citta;
+        if (eta < 10){
+            this.promozione = TipoPromozione.PROMOETA;
+        }
     }
 
     /**
@@ -84,5 +88,21 @@ public class Cliente {
 
     public void setPrenotazione(Prenotazione prenotazione) {
         this.prenotazione = prenotazione;
+    }
+
+    public TipoPromozione getPromozione() {
+        return promozione;
+    }
+
+    public void setPromozione(TipoPromozione promozione) {
+        this.promozione = promozione;
+    }
+
+    public Integer getNumeroClienti() {
+        return numeroClienti;
+    }
+
+    public void setNumeroClienti(Integer numeroClienti) {
+        this.numeroClienti = numeroClienti;
     }
 }

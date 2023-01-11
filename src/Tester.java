@@ -1,4 +1,6 @@
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +10,7 @@ public class Tester {
         List<Portata> piattiMenu = new ArrayList<>();
 
         Menu menu1 = new Menu("Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
+
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, PreferencesEnum.ONNIVORO, "Frizzante, Naturale");
@@ -75,6 +78,11 @@ public class Tester {
 
         Ristorante ristorante = new Ristorante("PROVA1");
         ristorante.stampaListaClienti(clienteList);
+
+
+
+
+
 
 
 
