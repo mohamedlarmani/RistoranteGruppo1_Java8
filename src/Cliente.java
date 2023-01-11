@@ -8,8 +8,6 @@ public class Cliente {
     private String citta;
     private TipoPromozione promozione;
 
-    //TODO
-    private Integer numeroClienti;
 
 
 
@@ -21,7 +19,6 @@ public class Cliente {
      * @param citta dei clienti per le future promozioni
      */
 
-    //TODO rifattorizzare
     public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta) {
         this.nome = nome;
         this.cognome = cognome;
@@ -31,14 +28,6 @@ public class Cliente {
         if (eta < 10){
             this.promozione = TipoPromozione.PROMOETA;
         }
-    }
-
-    /**
-     * @return per controllare se il cliente ha già la prenotazione, in questo caso ritorna falso
-     */
-    //
-    public boolean haPrenotato(){
-        return prenotazione != null;
     }
 
 
@@ -82,14 +71,6 @@ public class Cliente {
         this.citta = citta;
     }
 
-    public Prenotazione getPrenotazione() {
-        return prenotazione;
-    }
-
-    public void setPrenotazione(Prenotazione prenotazione) {
-        this.prenotazione = prenotazione;
-    }
-
     public TipoPromozione getPromozione() {
         return promozione;
     }
@@ -98,11 +79,4 @@ public class Cliente {
         this.promozione = promozione;
     }
 
-    public Integer getNumeroClienti() {
-        return numeroClienti;
-    }
-
-    public void setNumeroClienti(Integer numeroClienti) {
-        this.numeroClienti = numeroClienti;
-    }
 }

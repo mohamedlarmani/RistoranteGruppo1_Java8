@@ -11,7 +11,6 @@ public class CampagnaPromozionale{
     private LocalDateTime dataFine;
 
     private Portata portata;
-    private Promozione promo; //TODO IN QUESTO CASO HA SENSO LASCIARE PROMOZIONE? -MARI
 
     public CampagnaPromozionale(LocalDateTime dataInizio, LocalDateTime dataFine) {
         this.dataInizio = dataInizio;
@@ -50,17 +49,7 @@ public class CampagnaPromozionale{
         this.portata = portata;
     }
 
-    public Promozione getPromo() {
-        return promo;
+
     }
 
-    public void setPromo(Promozione promo) {
-        this.promo = promo;
-    }
 
-    public void addPromo(Portata portata, Promozione promo){
-        this.portata = portata;
-        this.promo = promo;
-    }
-
-}

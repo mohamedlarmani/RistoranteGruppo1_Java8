@@ -61,9 +61,9 @@ public class Tester {
         piattiMenu.add(sorbettoAlLimone);
 
 
-        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo");
-        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli");
-        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 10, "Venezia");
+        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo",2);
+        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli",3);
+        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 9, "Venezia",4);
         System.out.println("-----------------------------");
 
         menu1.printMenu();
@@ -78,7 +78,6 @@ public class Tester {
 
         Ristorante ristorante = new Ristorante("PROVA1");
         ristorante.stampaListaClienti(clienteList);
-
 
 
 
