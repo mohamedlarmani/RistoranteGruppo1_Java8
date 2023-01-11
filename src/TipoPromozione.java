@@ -1,18 +1,16 @@
 public enum TipoPromozione {
 
-    PROMOETAUNDER14("Menu bambino minore di 15 anni", "35%"),
-    PROMOETAOVER35MERCOLEDI("Menu scontato per tutti gli over 35", "30%"),
-    PROMODONNE("Menu scontato per tutte le donne", "25%"),
-    PROMOVIVAILGIOVEDI("Menu scontato per tutti", "30%"),
-    PROMORITORNOALAVOROCONDOLCEZZA("Menu scontato per tutti ogni lunedì","40%");
+    PROMOETAUNDER12("Menu bambino minore di 12 anni","25%"),
+    PROMOETAOVER35MERCOLEDI("Menù per tutti gli over 35 ogni mercoledì","20%"),
+    PROMODONNE("Menù scontato per tutte le donne","20%"),
+    PROMOVIVAILGIOVEDI("Menù scontato ogni giovedì per tutti", "25%"),
+    PROMORITORNOALLAVOROCONDOLCEZZA("Menù scontato ogni lunedì", "30%");
+
 
     private String descrizione;
     private String scontoEffettuato;
 
-
-    TipoPromozione(String descrizione,String scontoEffettuato ){
-        this.descrizione = descrizione;
-        this.scontoEffettuato= scontoEffettuato;
+    TipoPromozione(String descrizione, String scontoEffettuato){this.descrizione = descrizione; this.scontoEffettuato= scontoEffettuato;
     }
 
     public String getDescrizione() {
