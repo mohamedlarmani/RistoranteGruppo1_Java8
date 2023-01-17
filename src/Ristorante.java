@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Ristorante {
 
-    private static int numeroTavolo = 0;
+    private static int idAutoIncrTable = 0;
 
     private String restaurantName;
 
@@ -48,12 +48,12 @@ public class Ristorante {
         this.campagnaPromozionale = campagnaPromozionale;
     }
 
-    public static int getNumeroTavolo() {
-        return numeroTavolo;
+    public static int getIdAutoIncrTable() {
+        return idAutoIncrTable;
     }
 
-    public static void setNumeroTavolo(int numeroTavolo) {
-        Ristorante.numeroTavolo = numeroTavolo;
+    public static void setIdAutoIncrTable(int idAutoIncrTable) {
+        Ristorante.idAutoIncrTable = idAutoIncrTable;
     }
 
     public List<Cliente> getClienteList() {
@@ -92,7 +92,7 @@ public class Ristorante {
         for (Tavolo t : tavoloList) {
             System.out.println("Numero Tavolo : " + t.getNumeroDiTavolo() + " Nome: " + t.getCliente().getNome() + ", Cognome: " + t.getCliente().getCognome());
         }
-        System.out.println("Tavoli occupati: " + numeroTavolo);
+        System.out.println("Tavoli occupati: " + idAutoIncrTable);
     }
 
     public void stampaListaClienti() {
@@ -107,19 +107,16 @@ public class Ristorante {
         }
     }
 
-    public Prenotazione prenotazioneRistorante(Cliente cliente, LocalDateTime data, int numeroPersone){
-        Prenotazione nuovaPrenotazione = new Prenotazione();
+    public void prenotazioneRistorante(Cliente cliente, LocalDateTime data, int numeroPersone){
         if (tavoloList.size() < totaleTavoli){
-            nuovaPrenotazione = new Prenotazione(data, numeroPersone, true, cliente);
-            numeroTavolo++;
-            Tavolo nuovoTavolo = new Tavolo(numeroTavolo,cliente);
+            Prenotazione nuovaPrenotazione = new Prenotazione(data, numeroPersone, true, cliente);
+            idAutoIncrTable++;
+            Tavolo nuovoTavolo = new Tavolo(idAutoIncrTable,cliente);
             tavoloList.add(nuovoTavolo);
             prenotazioniList.add(nuovaPrenotazione);
         } else {
-            nuovaPrenotazione = new Prenotazione(data, numeroPersone, false, cliente);
             System.out.println("Tutti i tavoli sono già prenotati in questo momento, si prega di scegliere un'altra data o ora");
         }
-        return nuovaPrenotazione;
     }
 
 

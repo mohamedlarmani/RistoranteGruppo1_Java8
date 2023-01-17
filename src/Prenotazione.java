@@ -2,14 +2,12 @@ import java.time.LocalDateTime;
 
 public class Prenotazione {
 
+    //TODO inseriamo metodi d'ultilità, stampa, se è una prenotazione in giorno festivo ecc ecc
+
     private LocalDateTime dataOraPrenotazione;
     private Integer numeroClienti;
     private boolean esitoPrenotazione;
     private Cliente cliente;
-
-
-    public Prenotazione(){}
-
 
     public Prenotazione(LocalDateTime dataOraPrenotazione, Integer numeroClienti, boolean esitoPrenotazione, Cliente cliente) {
         this.dataOraPrenotazione = dataOraPrenotazione;

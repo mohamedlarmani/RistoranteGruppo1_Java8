@@ -1,17 +1,13 @@
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class CampagnaPromozionale{
 
+    //TODO ha solo getter e setter, un metodo per stampare il tipo di promozione con la data in modo carino?
 
     private TipoPromozione tipoPromozione;
-
     private LocalDateTime dataInizio;
     private LocalDateTime dataFine;
-
     private Portata portata;
-
 
     public CampagnaPromozionale(LocalDateTime dataInizio, LocalDateTime dataFine, TipoPromozione tipoPromozione) {
         this.dataInizio = dataInizio;
@@ -50,7 +46,6 @@ public class CampagnaPromozionale{
     public void setPortata(Portata portata) {
         this.portata = portata;
     }
-
 
 
 }

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d5fe22-849a-4ee0-adf4-ef2a2db27ea9" name="Changes" comment="added updated Enum TipoPromozione" />
+    <list default="true" id="6e583b82-3702-4a91-919d-1c8b3af55463" name="Changes" comment="code review 17/01/23">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CampagnaPromozionale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CampagnaPromozionale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prenotazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prenotazione.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673462490524</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="code review 17/01/23">
+      <created>1673960160978</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673960160978</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +171,8 @@
     <MESSAGE value="updated .gitignore" />
     <MESSAGE value="add edit class" />
     <MESSAGE value="added updated Enum TipoPromozione" />
-    <option name="LAST_COMMIT_MESSAGE" value="added updated Enum TipoPromozione" />
+    <MESSAGE value="code review 17/01/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="code review 17/01/23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

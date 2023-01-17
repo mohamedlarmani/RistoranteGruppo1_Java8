@@ -1,13 +1,12 @@
 public class Cliente {
+
+    // TODO anche qui inseriamo dei metodi d'utilità, quello che volete
     private String nome;
     private String cognome;
     private PreferencesEnum preference;
     private Integer eta;
     private String citta;
     private TipoPromozione promozione;
-
-
-
 
     /**
      * @param nome dei clienti
@@ -16,7 +15,6 @@ public class Cliente {
      * @param eta dei clienti per le future promozioni
      * @param citta dei clienti per le future promozioni
      */
-
     public Cliente(String nome,String cognome, PreferencesEnum preference, Integer eta, String citta) {
         this.nome = nome;
         this.cognome = cognome;
