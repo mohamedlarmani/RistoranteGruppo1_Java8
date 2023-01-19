@@ -1,7 +1,4 @@
-
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,15 +58,14 @@ public class Tester {
         piattiMenu.add(sushiDessert);
         piattiMenu.add(sorbettoAlLimone);
         
-        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo");
-        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli");
-        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 9, "Venezia");
+        Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo", GenereEnum.DONNA, "3270592967","rossellabianchi@gmail.com");
+        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli",GenereEnum.UOMO, "3313669897", "lorenzodefranceschi@hotmail.com");
+        Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 9, "Venezia", GenereEnum.ALTRO, "3247898200", "venezia00@libero.it");
         System.out.println("-----------------------------");
 
         menu1.printMenu();
 
         System.out.println("======== PRENOTAZIONI ========");
-
 
         Ristorante ristorante = new Ristorante("PROVA1", 2);
         ristorante.stampaListaClienti();
@@ -81,6 +77,12 @@ public class Tester {
         ristorante.stampaListaTavoli();
         ristorante.prenotazioneRistorante(clienteVegeteriano, LocalDateTime.of(2023,1,22,12,00), 5);
 
+        System.out.println("======== AREA PERSONALE ========");
+        clienteOnnivoro.stampaInfoCliente();
+        System.out.println("---");
+        clienteVegano.stampaInfoCliente();
+        System.out.println("---");
+        clienteVegeteriano.stampaInfoCliente();
 
     }
 }
