@@ -103,7 +103,7 @@ public class Ristorante {
 
     public void stampaListaPrenotazioni() {
         for (Prenotazione p : prenotazioniList) {
-            System.out.println("Nome: " + p.getCliente().getNome() + ", Cognome: " + p.getCliente().getCognome() + ", Ha prenotato il: " + p.getDataOraPrenotazione() + " per: " + p.getNumeroClienti() + " persone");
+            p.stampaPrenotazione();
         }
     }
 
@@ -118,6 +118,7 @@ public class Ristorante {
             System.out.println("Tutti i tavoli sono già prenotati in questo momento, si prega di scegliere un'altra data o ora");
         }
     }
+
 
 
 }

@@ -71,23 +71,15 @@ public class Tester {
         System.out.println("======== PRENOTAZIONI ========");
 
 
-        Ristorante ristorante = new Ristorante("PROVA1", 50);
+        Ristorante ristorante = new Ristorante("PROVA1", 2);
         ristorante.stampaListaClienti();
-        ristorante.prenotazioneRistorante(clienteOnnivoro, LocalDateTime.of(2023,1,15,12,00), 5);
+        ristorante.prenotazioneRistorante(clienteOnnivoro, LocalDateTime.of(2023,1,20,12,00), 5);
 
-        //TODO questo stampa il to string va usato il metodo per stampare la lista
-        System.out.println(ristorante.getPrenotazioniList());
+        ristorante.prenotazioneRistorante(clienteVegano, LocalDateTime.of(2023,1,22,12,00), 5);
 
-        ristorante.prenotazioneRistorante(clienteVegano, LocalDateTime.of(2023,1,15,12,00), 5);
         ristorante.stampaListaPrenotazioni();
         ristorante.stampaListaTavoli();
-
-
-
-
-
-
-
+        ristorante.prenotazioneRistorante(clienteVegeteriano, LocalDateTime.of(2023,1,22,12,00), 5);
 
 
     }
