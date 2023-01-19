@@ -18,16 +18,16 @@ public class Ristorante {
 
     private Integer totaleTavoli;
 
-    //TODO
+    //TODO non passiamo campagna promozionale nel costruttore
     public Ristorante(String restaurantName, Integer totaleTavoli) {
         this.restaurantName = restaurantName;
+        this.totaleTavoli = totaleTavoli;
         clienteList = new ArrayList<>();
         tavoloList = new ArrayList<>();
         prenotazioniList = new ArrayList<>();
-        this.totaleTavoli = totaleTavoli;
     }
 
-
+    //TODO sistemare e chiamare nel modo corretto
     public void addPromo(CampagnaPromozionale p){
         this.campagnaPromozionale = campagnaPromozionale;
     }

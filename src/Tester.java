@@ -69,18 +69,16 @@ public class Tester {
         menu1.printMenu();
 
         System.out.println("======== PRENOTAZIONI ========");
-        List<Cliente> clienteList = new ArrayList<>();
-        clienteList.add(clienteVegano);
-        clienteList.add(clienteOnnivoro);
-        clienteList.add(clienteVegeteriano);
+
 
         Ristorante ristorante = new Ristorante("PROVA1", 50);
         ristorante.stampaListaClienti();
-        LocalDateTime data;
-        ristorante.prenotazioneRistorante(clienteOnnivoro, data = LocalDateTime.of(2023,1,15,12,00), 5);
+        ristorante.prenotazioneRistorante(clienteOnnivoro, LocalDateTime.of(2023,1,15,12,00), 5);
+
+        //TODO questo stampa il to string va usato il metodo per stampare la lista
         System.out.println(ristorante.getPrenotazioniList());
 
-        ristorante.prenotazioneRistorante(clienteVegano, data = LocalDateTime.of(2023,1,15,12,00), 5);
+        ristorante.prenotazioneRistorante(clienteVegano, LocalDateTime.of(2023,1,15,12,00), 5);
         ristorante.stampaListaPrenotazioni();
         ristorante.stampaListaTavoli();
 
