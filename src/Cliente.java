@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Cliente {
 
-    // TODO anche qui inseriamo dei metodi d'utilità, quello che volete
     private String nome;
     private String cognome;
     private PreferencesEnum preference;

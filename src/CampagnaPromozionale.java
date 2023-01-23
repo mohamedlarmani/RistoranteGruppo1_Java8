@@ -2,8 +2,6 @@ import java.time.LocalDateTime;
 
 public class CampagnaPromozionale{
 
-    //TODO ha solo getter e setter, un metodo per stampare il tipo di promozione con la data in modo carino?
-
     private TipoPromozione tipoPromozione;
     private LocalDateTime dataInizio;
     private LocalDateTime dataFine;
@@ -47,5 +45,7 @@ public class CampagnaPromozionale{
         this.portata = portata;
     }
 
+    public void stampaCampagnaPromozionale(){
+        System.out.println("Inizio " + " - " + tipoPromozione + "  \uD83D\uDCC5  "  + dataInizio +  " - "   + dataFine + "  \uD83D\uDCC5  " );}
 
 }
