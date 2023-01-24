@@ -1,3 +1,5 @@
+package RistoranteGruppo1_Java8.src;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,5 +86,9 @@ public class Tester {
         System.out.println("---");
         clienteVegeteriano.stampaInfoCliente();
 
+        LocalDateTime dataInizio = LocalDateTime.of(2023,1,1,0,0);
+        LocalDateTime dataFine = LocalDateTime.of(2023,12,31,0,0);
+        CampagnaPromozionale promoDonne = new CampagnaPromozionale(dataInizio, dataFine, TipoPromozione.PROMODONNE);
+        promoDonne.stampaCampagnaPromozionale();
     }
 }

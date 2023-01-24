@@ -1,3 +1,5 @@
+package RistoranteGruppo1_Java8.src;
+
 import java.time.LocalDateTime;
 
 public class CampagnaPromozionale{
@@ -46,6 +48,7 @@ public class CampagnaPromozionale{
     }
 
     public void stampaCampagnaPromozionale(){
-        System.out.println("Inizio " + " - " + tipoPromozione + "  \uD83D\uDCC5  "  + dataInizio +  " - "   + dataFine + "  \uD83D\uDCC5  " );}
+        System.out.println("Inizio " + " - " + tipoPromozione + "  \uD83D\uDCC5  "  + dataInizio +  " FINE - "   + dataFine + "  \uD83D\uDCC5  " );}
+
 
 }
