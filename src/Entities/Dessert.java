@@ -1,8 +1,11 @@
-public class Secondipiatti extends Portata{
+package Entities;
+import Enum.*;
 
-   private String ingredients;
+public class Dessert extends Portata {
 
-    public Secondipiatti(String name, double price, PreferencesEnum preferencesEnum, String ingredients) {
+   private  String ingredients;
+
+    public Dessert(String name, double price, PreferencesEnum preferencesEnum, String ingredients) {
         super(name, price, preferencesEnum);
         this.ingredients = ingredients;
     }
@@ -10,6 +13,7 @@ public class Secondipiatti extends Portata{
     public String getIngredients() {
         return ingredients;
     }
+
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
@@ -17,10 +21,6 @@ public class Secondipiatti extends Portata{
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println("\uD83C\uDF65 Secondi piatti : " + " " + ingredients);
+        System.out.println(" \uD83C\uDF6C Dolci : " + ingredients);
     }
-
-
-
-
 }

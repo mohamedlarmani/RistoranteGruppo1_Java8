@@ -1,3 +1,7 @@
+package Entities;
+
+
+
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 
@@ -15,7 +19,6 @@ public class Prenotazione {
         this.numeroClienti = numeroClienti;
         this.esitoPrenotazione = esitoPrenotazione;
         this.cliente = cliente;
-        this.èFestivo = èFestivo();
     }
 
     public LocalDateTime getDataOraPrenotazione() {

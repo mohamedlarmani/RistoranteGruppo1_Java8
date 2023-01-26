@@ -1,3 +1,6 @@
+package Entities;
+
+import Enum.*;
 
 
 import java.time.LocalDateTime;

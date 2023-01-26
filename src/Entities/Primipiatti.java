@@ -1,3 +1,8 @@
+package Entities;
+
+import Enum.*;
+
+
 public class Primipiatti extends Portata{
 
     private String ingredients;

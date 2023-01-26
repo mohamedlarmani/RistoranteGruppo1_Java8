@@ -1,3 +1,7 @@
+package Entities;
+import Enum.*;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +21,7 @@ public class Cliente {
 
 
 
-    public Cliente(String nome,String cognome, PreferencesEnum preference, Integer età, String città, GenereEnum genere, String numeroCellulare, String email) {
+    public Cliente(String nome, String cognome, PreferencesEnum preference, Integer età, String città, GenereEnum genere, String numeroCellulare, String email) {
         this.nome = nome;
         this.cognome = cognome;
         this.preference = preference;

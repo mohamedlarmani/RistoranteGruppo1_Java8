@@ -1,6 +1,10 @@
+package Entities;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 public class Ristorante {
 
@@ -90,7 +94,7 @@ public class Ristorante {
 
     public void stampaListaTavoli() {
         for (Tavolo t : tavoloList) {
-            System.out.println("Numero Tavolo : " + t.getNumeroDiTavolo() + " Nome: " + t.getCliente().getNome() + ", Cognome: " + t.getCliente().getCognome());
+            System.out.println("Numero Entities.Tavolo : " + t.getNumeroDiTavolo() + " Nome: " + t.getCliente().getNome() + ", Cognome: " + t.getCliente().getCognome());
         }
         System.out.println("Tavoli occupati: " + idAutoIncrTable);
     }

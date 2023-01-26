@@ -1,8 +1,10 @@
+package Enum;
+
 public enum StateEnum {
 
-    LIBERO ("Tavolo libero"),
-    OCCUPATO("Tavolo occupato"),
-    RISERVATO ("Tavolo riservato");
+    LIBERO ("Entities.Tavolo libero"),
+    OCCUPATO("Entities.Tavolo occupato"),
+    RISERVATO ("Entities.Tavolo riservato");
 
     private String descrizione;
     StateEnum(String descrizione) {

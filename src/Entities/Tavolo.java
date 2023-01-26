@@ -1,3 +1,6 @@
+package Entities;
+import Enum.*;
+
 public class Tavolo {
 
     private Integer numeroDiTavolo;

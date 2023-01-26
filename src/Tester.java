@@ -1,5 +1,9 @@
+import Entities.*;
+import Enum.*;
+import MySqlUtil.MySQLJDBCUtil;
 
-
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,14 +11,38 @@ import java.util.List;
 
 public class Tester {
     public static void main(String[] args) {
+
+        Connection conn = null;
+
+
+        try {
+            conn = MySQLJDBCUtil.getConnection();
+            System.out.println(String.format("Connected to database %s "
+                    + "successfully.", conn.getCatalog()));
+        } catch(SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            try{
+                if(conn != null)
+                    conn.close();
+            }catch(SQLException ex){
+                System.out.println(ex.getMessage());
+            }
+        }
+
+
+
+
+
+
         List<Portata> piattiMenu = new ArrayList<>();
 
-        Menu menu1 = new Menu("Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
+        Menu menu1 = new Menu("Entities.Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
 
 
         //BEVANDE
         Bevande acqua25cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 25cl", 3.50, PreferencesEnum.ONNIVORO, "Frizzante, Naturale");
-        Bevande acqua75cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 75cl", 3.50,PreferencesEnum.ONNIVORO, "Frizzante, Naturale");
+        Bevande acqua75cl = new Bevande("ACQUA PANNA - SAN PELLEGRINO 75cl", 3.50, PreferencesEnum.ONNIVORO, "Frizzante, Naturale");
         Bevande te = new Bevande("TÈ FREDDO", 3.50, PreferencesEnum.ONNIVORO, "Limone, Pesca");
         Bevande succhi = new Bevande("SUCCHI DI FRUTTA PLOSE BIO 20cl", 4.50, PreferencesEnum.ONNIVORO, "Limone, Pesca, Pera, Pesca, Albicocca, Ace, Mela, Ananas, Arancia e Pompelmo");
         Bevande bibiteLattina = new Bevande("BIBITE IN LATTINA", 4.00, PreferencesEnum.ONNIVORO,"Coca-Cola, Coca-Cola Zero, Sprite, Estate', Fanta, Lemonsoda");
@@ -36,7 +64,7 @@ public class Tester {
         Dessert friedNutella = new Dessert("fried nutella",3.50, PreferencesEnum.VEGANO,"con nutella fritta");
         Dessert friedChocolateIceCream = new Dessert("fried chocolate ice cream",6.00, PreferencesEnum.ONNIVORO,"con cioccolata fritta");
         Dessert sushiDessert = new Dessert("sushi dessert",6.00, PreferencesEnum.ONNIVORO,"bocconcini di gelato e meringa alla frutta");
-        Dessert sorbettoAlLimone = new Dessert("sorbetto al limone",3.50,PreferencesEnum.VEGETARIANO, "lemon sorbet");
+        Dessert sorbettoAlLimone = new Dessert("sorbetto al limone",3.50, PreferencesEnum.VEGETARIANO, "lemon sorbet");
 
 
         piattiMenu.add(acqua25cl);
@@ -61,7 +89,7 @@ public class Tester {
         piattiMenu.add(sorbettoAlLimone);
         
         Cliente clienteVegeteriano = new Cliente("Rossella", "Bianchi", PreferencesEnum.VEGETARIANO, 22, "Bergamo", GenereEnum.DONNA, "3270592967","rossellabianchi@gmail.com");
-        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli",GenereEnum.UOMO, "3313669897", "lorenzodefranceschi@hotmail.com");
+        Cliente clienteVegano = new Cliente("Lorenzo", "De Lorenzi", PreferencesEnum.VEGANO, 30, "Napoli", GenereEnum.UOMO, "3313669897", "lorenzodefranceschi@hotmail.com");
         Cliente clienteOnnivoro = new Cliente("Alexandru", "Rossi", PreferencesEnum.ONNIVORO, 9, "Venezia", GenereEnum.ALTRO, "3247898200", "venezia00@libero.it");
         System.out.println("-----------------------------");
 

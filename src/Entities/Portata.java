@@ -1,3 +1,6 @@
+package Entities;
+import Enum.*;
+
 public class Portata{
 
     private String name;
@@ -37,7 +40,7 @@ public class Portata{
 
 
     public void printPortataDetail(){
-        System.out.println( " ▸  €  "  + price + "        Portata : " + " " + name );
+        System.out.println( " ▸  €  "  + price + "        Entities.Portata : " + " " + name );
     }
 
 }

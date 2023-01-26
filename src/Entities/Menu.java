@@ -1,3 +1,6 @@
+package Entities;
+
+import Enum.*;
 import java.util.List;
 
 public class Menu{

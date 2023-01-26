@@ -1,3 +1,6 @@
+package Entities;
+import Enum.*;
+
 public class Bevande extends Portata {
 
     private String type;
@@ -18,7 +21,7 @@ public class Bevande extends Portata {
     @Override
     public void printPortataDetail() {
         super.printPortataDetail();
-        System.out.println(" \uD83E\uDD64 Bevande : " + " " + type);
+        System.out.println(" \uD83E\uDD64 Entities.Bevande : " + " " + type);
     }
 
 }

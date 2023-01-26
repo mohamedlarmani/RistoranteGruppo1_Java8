@@ -1,3 +1,5 @@
+package Enum;
+
 public enum PreferencesEnum {
         ONNIVORO ("Menù fisso "),
         VEGETARIANO ("Menù vegetariano "),

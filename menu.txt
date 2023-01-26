@@ -1,7 +1,7 @@
-Nome Ristorante : MaSaMaMo
+Nome Entities.Ristorante : MaSaMaMo
 
 
-Tipo Menu: Pesce
+Tipo Entities.Menu: Pesce
 
 BEVANDE
 
