@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e583b82-3702-4a91-919d-1c8b3af55463" name="Changes" comment="creati differenti packages e aggiunto metodo d'accesso al db">
+    <list default="true" id="6e583b82-3702-4a91-919d-1c8b3af55463" name="Changes" comment=".gitignore updated">
+      <change afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +45,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/chaou/Desktop/ProgiettoDevelhope/RistoranteGruppo1_Java8/lib/mysql-connector-j-8.0.32.jar",
+    "last_opened_file_path": "C:/Users/chaou/Desktop/ProgiettoDevelhope/RistoranteGruppo1_Java8",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "file.status.colors"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "SQL"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,6 +66,7 @@
       <recent name="C:\Users\chaou\Desktop\ProgiettoDevelhope\RistoranteGruppo1_Java8" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chaou\Desktop\ProgiettoDevelhope\RistoranteGruppo1_Java8" />
       <recent name="C:\Users\Michele\OneDrive\Desktop\leadJava8\RistoranteGruppo1_Java8" />
     </key>
   </component>
@@ -148,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674751741006</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=".gitignore updated">
+      <created>1674752242115</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674752242115</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +199,8 @@
     <MESSAGE value="added updated Enum TipoPromozione" />
     <MESSAGE value="code review 17/01/23" />
     <MESSAGE value="creati differenti packages e aggiunto metodo d'accesso al db" />
-    <option name="LAST_COMMIT_MESSAGE" value="creati differenti packages e aggiunto metodo d'accesso al db" />
+    <MESSAGE value=".gitignore updated" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

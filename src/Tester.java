@@ -31,10 +31,6 @@ public class Tester {
         }
 
 
-
-
-
-
         List<Portata> piattiMenu = new ArrayList<>();
 
         Menu menu1 = new Menu("Entities.Menu Test", PreferencesEnum.ONNIVORO, piattiMenu);
